@@ -2,13 +2,8 @@
 	text-align: center;
 	margin-top:6em;
 	z-index: 100;
-	/*background-image:url('../machine.jpg');
-	width:800px;
-	height:1282px;*/
 	padding-top:5em;
-	/*border:1px solid blue;*/
 }
-
 
 #itvends {
 	text-align: center;
@@ -29,7 +24,7 @@
 
 body
 {
-	background:#ffffff url('../machine.jpg') no-repeat center top;
+	background:#ffffff url('/img/machine.jpg') no-repeat center top;
 	font-family: Verdana,Arial,sans-serif; 
 	font-size: 1.1em;
 }
