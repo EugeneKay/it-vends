@@ -1,0 +1,35 @@
+#vendit {
+	text-align: center;
+	margin-top:6em;
+	z-index: 100;
+	/*background-image:url('../machine.jpg');
+	width:800px;
+	height:1282px;*/
+	padding-top:5em;
+	/*border:1px solid blue;*/
+}
+
+
+#itvends {
+	text-align: center;
+	font-size: 64px;
+	padding: 10px;
+}
+
+#venditem {
+	text-align: center;
+	font-size: 32px;
+}
+
+.itvends-overlay {
+    width: 75%;
+    padding: 10px;
+    /*margin-top:2em*/
+}
+
+body
+{
+	background:#ffffff url('../machine.jpg') no-repeat center top;
+	font-family: Verdana,Arial,sans-serif; 
+	font-size: 1.1em;
+}

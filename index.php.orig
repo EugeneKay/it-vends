@@ -1,0 +1,43 @@
+<?php
+//
+// IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS
+// 
+require_once("vendlist.php");
+echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
+<html>
+<head>
+<meta http-equiv=\"Content-type\" content=\"text/html;charset=UTF-8\" />
+<title>It Vends!</title>
+<link rel=\"stylesheet\" type=\"text/css\" href=\"itvends.css\" />
+</head>
+<body>
+<br />
+<br />
+<br />
+<br />
+<br />
+<div id=\"vendit\">
+<form action=\"/\" method=\"POST\">
+<input type=\"hidden\" name=\"action\" value=\"vend\">
+<input type=\"submit\" name=\"vendbutton\" value=\"Vend!\" style=\"font-size: 50;\" \>
+</form>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+";
+
+switch (@$_POST["action"]) {
+	case "vend":
+		echo "<div id=\"itvends\">IT VENDS!</div>\n";
+		echo "<br />\n<br />\n";
+		echo "<div id=\"venditem\">".$vendlist[array_rand($vendlist, 1)]."</div>";
+		break;
+	default:
+	
+	}
+echo '</body>
+</html>';
+
