@@ -1,7 +1,7 @@
 <?php
 // It-Vends/vend.php
 
-
+require_once( "vendlist.php" );
 if (isset( $_POST["action"] ) ) {
 	$action = $_GET["action"];
 }
@@ -11,7 +11,6 @@ elseif (isset( $_GET["action"] ) ) {
 else {
 	$action = "vend";
 }
-	{
 switch ($action) {
 	case "vend":
 		echo $vendlist[array_rand($vendlist, 1)];
