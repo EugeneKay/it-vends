@@ -18,9 +18,8 @@
 	</head>
 	<body><center>
 		<div id="vendit">
-			<form action="." id="awesome" method="post">
+			<form action="/" id="awesome" method="post">
 				<input name="action" value="vend" type="hidden"/>
-				<!-- <input id="vendbutton" value="Vend!" type="submit"/> -->
 				<a href="#" id="vendbutton"><span style="font-size:100px;">Vend!</span></a>
 			</form>
 			<center>
