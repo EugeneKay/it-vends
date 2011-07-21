@@ -1,5 +1,13 @@
 <?php
 // It-Vends/index.php
+switch ($_SERVER['SERVER_PORT']) {
+case '443':
+	define ('PROTOCOL', 'https');
+	break;
+case '80':
+default:
+	define('PROTOCOL', 'http');
+}
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -8,7 +16,7 @@
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
 		<title>It Vends!</title>
-		<base href="http://itvends.com/" />
+		<base href="<?php echo PROTOCOL;?>://itvends.com/" />
 		<link rel="stylesheet" type="text/css" href="css/itvends.css"/>
 		<link rel="stylesheet" type="text/css" href="css/start/jquery-ui-1.8.5.custom.css"/>
 		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
