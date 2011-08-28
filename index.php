@@ -1,5 +1,23 @@
 <?php
 // It-Vends/index.php
+/* 
+// Copyright 2011 Eugene E. Kashpureff and Jeffrey C. Hoyt
+//
+// The full source code is available at http://github.com/eugenekay/it-vends
+//
+// It Vends is free software: you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the Free Software 
+// Foundation, either version 3 of the License, or (at your option) any later
+// version.
+// 
+// It Vends is distributed in the hope that it will be useful, but WITHOUT ANY 
+// WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+// A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+// 
+// You should have received a copy of the GNU General Public License
+// along with It Vends. If not, see <http://www.gnu.org/licenses/>.
+*/
+
 switch ($_SERVER['SERVER_PORT']) {
 case '443':
 	define ('PROTOCOL', 'https');
@@ -22,10 +40,10 @@ default:
 		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.14.js"></script>
 		<script type="text/javascript">
-		  $(document).ready(function() {
+		 $(document).ready(function() {
 				$( "#vendbutton" ).button();
 				$( "#vendbutton" ).click(function() { $('#awesome').submit(); });
-		  });
+		 });
 		</script>
 	</head>
 	<body><center>
@@ -49,6 +67,8 @@ switch (@$_POST["action"]) {
 ?>
 			</center>
 		</div>
+		
 		</center>
+		<div id="footer"><div>Code available on <a href="https://github.com/eugenekay/it-vends">GitHub</a> under the terms of the <a href="https://www.gnu.org/licenses/gpl.html">GPL</a></div></div>
 	</body>
 </html>
