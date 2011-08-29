@@ -1,0 +1,88 @@
+It-Vends/README
+
+    +---------------------------------------------------------------------+
+    |   __________________           _______ _       ______  _______ _    |
+    |   \__   __/\__   __/  |\     /|  ____ \ (    /|  __  \(  ____ \ )   |
+    |      ) (      ) (     | )   ( | (    \/  \  ( | (  \  ) (    \/ |   |
+    |      | |      | |     | |   | | (__   |   \ | | |   ) | (_____| |   |
+    |      | |      | |     ( (   ) )  __)  | (\ \) | |   | |_____  ) |   |
+    |      | |      | |      \ \_/ /| (     | | \   | |   ) |     ) |_)   |
+    |   ___) (___   | |       \   / | (____/\ )  \  | (__/  )\____) |_    |
+    |   \_______/   )_(        \_/  (_______//    )_)______/\_______)_)   |
+    |                                                                     |
+    +---------------------------------------------------------------------+
+
+Table of Contents
+	1) About
+	2) Copyright
+	3) Acknowledgements
+	4) Changelog
+	5) License
+	6) Installation
+	7) Contributions
+
+
+
+1) About
+
+
+2) Copyright
+
+It Vends is Copyright 2011 Eugene E. Kashpureff and Jeffrey C. Hoyt.
+
+3) Acknowledgements
+
+
+4) Changelog
+
+
+5) License
+
+It Vends is chiefly free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version. If you wish to obtain It Vends under another license(including a
+proprietary commercial license) for inclusion into other software or use in a
+situation where the GNU GPL is not acceptable, you may contact the Authors for
+further information. 
+
+When obtained under the GNU General Public License, It Vends is distributed in
+the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details. You should have received a copy of
+the GNU General Public License along with It Vends. If not, you may obtain it at
+http://www.gnu.org/licenses/
+
+The full source code for It Vends is available at 
+https://github.com/eugenekay/it-vends
+
+It Vends includes the jQuery library, and it is distributed under the terms of
+the GNU General Public License, version 3, in accordance with the allowances of
+the MIT "Expat" License(included with It Vends as licenses/jQuery-MIT.txt). You
+may obtain a copy of the jQuery library for your own use at http://jquery.com/
+
+It Vends includes the Sizzle.js library, and it is distributed under the terms
+of the GNU General Public License, version 3, in accordance with the allowances
+of the MIT "Expat" License(included with It Vends as licenses/Sizzle-MIT.txt).
+You may obtain a copy of the Sizzle.js library for your own use at
+http://sizzlejs.com/
+
+It Vends includes the jQuery User Interface library, and it is distributed under
+the terms of the GNU General Public License, version 3, in accordance with the
+allowances of the MIT "Expat" License(included with It Vends as
+licenses/jQuery-ui-MIT.txt). You may obtain a copy of the jQuery User Interface
+library for your own use at http://jqueryui.com/
+
+6) Installation
+
+
+7) Contributions
+
+As stated in Section 5, It Vends is chiefly distributed under the terms of the
+GNU General Public License, version 3(or later, at your option) without warranty
+or guarantee. However, the primary authors of It Vends reserve the right to
+relicense It Vends under any suitable license, including(but not limited to) a
+proprietary commercial license. In order to protect this right, any
+contributions to It Vends must be made under a Contributor License Agreement in
+order to be accepted. Any contributions, if accepted, will be licensed under the
+same terms as the existing It Vends codebase.
