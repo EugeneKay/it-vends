@@ -12,6 +12,7 @@ It-Vends/README
     |                                                                     |
     +---------------------------------------------------------------------+
 
+
 Table of Contents
 	1) About
 	2) Copyright
@@ -22,23 +23,44 @@ Table of Contents
 	7) Contributions
 
 
-
 1) About
 
+It Vends is a small, silly project to distribute items at random to the internet
+public. It also provides a basic API(via vend.php) to request items for usage by
+automated IRC bots or similar. A full RESTful API(with social integration) is
+planned, but not yet implemented.
 
 2) Copyright
 
-It Vends is Copyright 2011 Eugene E. Kashpureff and Jeffrey C. Hoyt.
+It Vends is Copyright 2011 by:
+*Eugene E. "EugeneKay" Kashpureff (eugene@kashpureff.org)
+*Jeffrey C. "Entomo" Hoyt (jchoyt@gmail.com)
+Portions are copyright by their authors, as marked in the source files or listed
+in the Acknowledgements section of this README file.
+
+It Vends is pending trademark registration in The United States of America.
+Usage of this term(including the phrase "It Vends!") is permitted within reason
+and when used in a manner consistent with the image of the brand.
+
+Included libraries(jQuery, Sizzle, jQuery UI) are copyright by their respective
+authors, as noted in their source files.
 
 3) Acknowledgements
 
+*Miss "sannse", for providing the favicon.ico, based upon a Public Domain candy
+artwork.
 
 4) Changelog
 
+v1.0
+*First production release
+*Index.php: Provides a large "Vend!" button for web browser users
+*Vend.php: Basic Vending API for use by scripts, eg IRC bots.
+*IT VENDS!
 
 5) License
 
-It Vends is chiefly free software: you can redistribute it and/or modify it
+It Vends is offered as free software: you can redistribute it and/or modify it
 under the terms of the GNU General Public License as published by the Free
 Software Foundation, either version 3 of the License, or (at your option) any
 later version. If you wish to obtain It Vends under another license(including a
@@ -75,6 +97,9 @@ library for your own use at http://jqueryui.com/
 
 6) Installation
 
+It Vends may be installed in the root directory of any VirtualHost. The current
+.htaccess assumes usage of the itvends.com domain and an Apache web server. Your
+setup will inevitably differ, and the domain should be changed accordingly.
 
 7) Contributions
 
@@ -82,7 +107,6 @@ As stated in Section 5, It Vends is chiefly distributed under the terms of the
 GNU General Public License, version 3(or later, at your option) without warranty
 or guarantee. However, the primary authors of It Vends reserve the right to
 relicense It Vends under any suitable license, including(but not limited to) a
-proprietary commercial license. In order to protect this right, any
+proprietary commercial license. In order to maintain this right, any
 contributions to It Vends must be made under a Contributor License Agreement in
-order to be accepted. Any contributions, if accepted, will be licensed under the
-same terms as the existing It Vends codebase.
+order to be accepted.
