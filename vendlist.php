@@ -9,7 +9,7 @@
 // Items should be in the format "<preposition> <noun>". No trailing period.
 // A better way to handle fuller sentences will be added with the REST API.
 
-$vendlist[]="10 year old bottle of scotch";
+$vendlist[]="a 10 year old bottle of scotch";
 $vendlist[]="a bar of Nutpatch Nougat";
 $vendlist[]="a Crunchie";
 $vendlist[]="a Leggs egg";
@@ -17,7 +17,7 @@ $vendlist[]="a Snickers bar";
 $vendlist[]="a bag of Doritos";
 $vendlist[]="a bag of M&Ms";
 $vendlist[]="a bag of pretzels";
-$vendlist[]="a container of live bait";
+$vendlist[]="a container with live bait";
 $vendlist[]="a cup of yogurt and a spoon";
 $vendlist[]="a delicious 5 course meal";
 $vendlist[]="a necktie";
@@ -27,7 +27,7 @@ $vendlist[]="a shuriken.  Into your face.";
 $vendlist[]="a shuriken.";
 $vendlist[]="an apple";
 $vendlist[]="an ice cream sandwich";
-$vendlist[]="the owner's manual for a 1973 pinto";
+$vendlist[]="the owner's manual for a 1973 Pinto";
 //$vendlist[]="no Canadian money, please.";
 $vendlist[]="a shower of sparks.";
 $vendlist[]="a large rat. How did *that* get in there?";
@@ -100,11 +100,11 @@ $vendlist[]="a plate of crisp bacon";
 $vendlist[]="a Stuart's Orange soda.";
 $vendlist[]="a 2 liter of A-Treat Big Blue.";
 $vendlist[]="a cool spy gadget.  There's no instruction manual.  Good Luck.";
-$vendlist[]="two packages of M & M's";
+$vendlist[]="two packages of M&Ms";
 $vendlist[]="a pack of matches";
 $vendlist[]="a travel pack of ibuprofen";
 $vendlist[]="a new air filter for a 1998 Nissan Altima";
-$vendlist[]="a caffiene free Diet Coke";
+$vendlist[]="a caffeine free Diet Coke";
 $vendlist[]="some gravel";
 $vendlist[]="$13.00 in pennies";
 $vendlist[]="a small Lego kit";
@@ -119,5 +119,6 @@ $vendlist[]="a Pepsi";
 $vendlist[]="a Pepsi";
 $vendlist[]="a Pepsi";
 $vendlist[]="a Diet Sierra Mist";
+$vendlist[]="a Pabst Blue Ribbon";
 //$vendlist[]="WARNING: This product contains chemicals known to the State of California to cause cancer and birth defects or other reproductive harm.";
 $vendlist[]="an expired SSL Certificate";
