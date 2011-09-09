@@ -26,8 +26,8 @@ default:
 		<link rel="icon" type="image/png" href="favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/itvends.css"/>
 		<link rel="stylesheet" type="text/css" href="css/start/jquery-ui-1.8.5.custom.css"/>
-		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.14.js"></script>
+		<script type="text/javascript" src="js/jquery-1.6.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16.js"></script>
 		<script type="text/javascript">
 		 $(document).ready(function() {
 				$( "#vendbutton" ).button();
