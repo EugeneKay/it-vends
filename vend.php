@@ -40,17 +40,10 @@ case "inventory":
 	break;
 case "vend":
 default:
-	if ($count==1) {
-		echo format($vendlist[array_rand($vendlist, 1)]);
+	for($i=0; $i < $count; $i++) {
+		$values[]=$vendlist[array_rand($vendlist)];
 	}
-	else {
-		$indicies = array_rand($vendlist, $count);
-		$values = array();
-		foreach($indicies as $index) {
-			$values[] = $vendlist[$index];
-		}
-		echo format($values);
-	}
+	echo format($values);
 	
 	break;
 }
