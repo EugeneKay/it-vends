@@ -13,7 +13,7 @@ $limit = 10;
 function format($data)
 {
 	global $formats;
-	$format = array_key_exists( 'format', $_GET) ? $_GET['format'] : 'text';
+	$format = post_get('format','text');
 	$format = in_array($format, $formats) ? $format : 'text';
 	
 	switch($format)
