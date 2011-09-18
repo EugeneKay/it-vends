@@ -32,9 +32,11 @@ function format($data)
 		case 'serial':
 			return serialize($data);
 		case 'json':
+			header('Content-type: application/json');
 			return json_encode($data);
 		case 'text':
 		default:
+			header('Content-type: text/plain');
 			$sep = post_get('sep','lf');
 			$sep = array_key_exists($sep, $text_seps) ? $text_seps[$sep] : $text_seps['lf'];
 			return is_array($data) ? implode( $sep, $data) : $data;
