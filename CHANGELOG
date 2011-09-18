@@ -1,0 +1,33 @@
+It-Vends/CHANGELOG
+
+v1.1-a1
+*First revision of the REST API
+ -Add multiple output formats, defaulting to "text"
+ -Add support for multiple items being vended, max of 10 per request
+*Add a separate functions file
+*Improve handling of variables from POST and GET
+*Refactor copyright notices
+ -Change file header copyright notices
+ -Rename Contributors section of README to Authors
+ -Move primary Authors into Authors section
+*Add License clauses
+ -Add requirement to rebrand to preserve 'It Vends' mark
+ -Add requirement to retain Authors and License information
+ -Add explicit permission for Non-attribution when used as a service
+*Add Kindari(William Cahill-Manley) to the Primary Authors list
+
+v1.0.2
+*Update external libs to their most recent versions
+*Expand the Items Pool
+
+v1.0.1
+*Add Kyte to the Acknowledgements list
+*Typo corrections in the vendlist
+*Now passes W3C XHTML validation
+*Make the favicon.ico's path explicit in index.php
+
+v1.0
+*First production release
+*Index.php: Provides a large "Vend!" button for web browser users
+*Vend.php: Basic Vending API for use by scripts, eg IRC bots.
+*IT VENDS!
