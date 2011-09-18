@@ -50,9 +50,14 @@ authors, as noted in their source files.
 
 *Miss "sannse", for providing the favicon.ico, based upon a Public Domain candy
 artwork.
-*Kyte, for his help with typos and such.
+*Kyte, for help with typos and such.
+*Shadok, for contributions to the Items Pool.
 
 4) Changelog
+
+v1.0.2
+*Update external libs to their most recent versions
+*Expand the Items Pool
 
 v1.0.1
 *Add Kyte to the Acknowledgements list
