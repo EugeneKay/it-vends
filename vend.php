@@ -6,9 +6,15 @@
 // Consult the README file included with this program for License information.
 //
 require_once( "vendlist.php" );
-
-$action = isset($_REQUEST['action']) ? $_REQUEST['action'] : 'vend';
-
+if (isset( $_POST["action"] ) ) {
+	$action = $_POST["action"];
+}
+elseif (isset( $_GET["action"] ) ) {
+	$action = $_GET["action"];
+}
+else {
+	$action = "vend";
+}
 switch ($action) {
 case "give":
 	echo "Item giving is currently not supported. Sorry";
