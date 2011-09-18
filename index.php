@@ -21,7 +21,7 @@ default:
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
 		<title>It Vends!</title>
-		<base href="<?php echo PROTOCOL;?>://itvends.com/"/>
+		<base href="<?php echo PROTOCOL;?>://<?php echo $_SERVER["HTTP_HOST"]?>/"/>
 		<link rel="icon" type="image/png" href="favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/itvends.css"/>
 		<link rel="stylesheet" type="text/css" href="css/start/jquery-ui-1.8.5.custom.css"/>
