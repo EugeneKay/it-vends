@@ -10,9 +10,18 @@ require_once( "vendlist.php" );
 $formats = array( 'text', 'json', 'serial', 'php' );
 $limit = 10;
 
+$text_seps = array(
+	'cr'	=> 	"\r",
+	'lf'	=>	"\n",
+	'crlf'	=>	"\r\n",
+	'comma'	=>	',',
+	'newline'=>	"\n",
+	'br'	=>	'<br />',
+);
+
 function format($data)
 {
-	global $formats;
+	global $formats, $text_seps;
 	$format = post_get('format','text');
 	$format = in_array($format, $formats) ? $format : 'text';
 	
@@ -26,7 +35,9 @@ function format($data)
 			return json_encode($data);
 		case 'text':
 		default:
-			return $data;
+			$sep = post_get('sep','lf');
+			$sep = array_key_exists($sep, $text_seps) ? $text_seps[$sep] : $text_seps['lf'];
+			return is_array($data) ? implode( $sep, $data) : $data;
 	}
 }
 
