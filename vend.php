@@ -7,15 +7,18 @@
 //
 require_once( "vendlist.php" );
 
+$formats = array( 'text', 'json', 'serial' );
 
 function format($data)
 {
-	$formats = array( 'text', 'json' );
+	global $formats;
 	$format = array_key_exists( 'format', $_GET) ? $_GET['format'] : 'text';
 	$format = in_array($format, $formats) ? $format : 'text';
 	
 	switch($format)
 	{
+		case 'serial'
+			return serialize($data);
 		case 'json':
 			return json_encode($data);
 		case 'text':
