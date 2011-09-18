@@ -5,8 +5,8 @@
 //
 // Consult the README file included with this program for License information.
 //
-re
-require_once( "vendlist.php" );
+require_once("functions.php");
+require_once("vendlist.php");
 
 $formats = array( 'text', 'json', 'serial', 'php' );
 $limit = 10;

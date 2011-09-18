@@ -13,20 +13,24 @@ function format($data) {
 	
 	switch($format) {
 	case 'php':
-		return var_export($data);
+		$return = var_export($data);
 		break;
 	case 'serial':
-		return serialize($data);
+		$return = serialize($data);
 		break;
 	case 'json':
-		return json_encode($data);
+		header('Content-type: application/json');
+		$return = json_encode($data);
 		break;
 	case 'text':
 	default:
+		header('Content-type: text/plain');
 		$sep = post_get('sep','lf');
 		$sep = array_key_exists($sep, $text_seps) ? $text_seps[$sep] : $text_seps['lf'];
-		return is_array($data) ? implode( $sep, $data) : $data;
+		$return = is_array($data) ? implode( $sep, $data) : $data;
 	}
+	
+	return $return;
 }
 
 function post_get($key, $default = null) {
