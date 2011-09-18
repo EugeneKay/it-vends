@@ -39,6 +39,9 @@ else {
 	$action = "vend";
 }
 switch ($action) {
+case "formats":
+	echo format($formats);
+	break;
 case "give":
 	echo "Item giving is currently not supported. Sorry";
 	break;
