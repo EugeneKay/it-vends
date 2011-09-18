@@ -7,7 +7,7 @@
 //
 require_once( "vendlist.php" );
 
-$formats = array( 'text', 'json', 'serial' );
+$formats = array( 'text', 'json', 'serial', 'php' );
 
 function format($data)
 {
@@ -17,6 +17,8 @@ function format($data)
 	
 	switch($format)
 	{
+		case 'php':
+			return var_export($data);
 		case 'serial':
 			return serialize($data);
 		case 'json':
