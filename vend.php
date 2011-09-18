@@ -17,7 +17,7 @@ function format($data)
 	
 	switch($format)
 	{
-		case 'serial'
+		case 'serial':
 			return serialize($data);
 		case 'json':
 			return json_encode($data);
