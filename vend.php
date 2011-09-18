@@ -7,14 +7,17 @@
 //
 require_once( "vendlist.php" );
 
-$formats = array('text');
-$format = array_key_exists( 'format', $_GET) ? $_GET['format'] : 'text';
-$format = in_array($format, $formats) ? $format : 'text';
 
 function format($data)
 {
+	$formats = array( 'text', 'json' );
+	$format = array_key_exists( 'format', $_GET) ? $_GET['format'] : 'text';
+	$format = in_array($format, $formats) ? $format : 'text';
+	
 	switch($format)
 	{
+		case 'json':
+			return json_encode($data);
 		case 'text':
 		default:
 			return $data;
