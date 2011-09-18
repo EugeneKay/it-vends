@@ -7,8 +7,19 @@
 //
 require_once( "vendlist.php" );
 
+$formats = array('text');
 $format = array_key_exists( 'format', $_GET) ? $_GET['format'] : 'text';
 $format = in_array($format, $formats) ? $format : 'text';
+
+function format($data)
+{
+	switch($format)
+	{
+		case 'text':
+		default:
+			return $data;
+	}
+}
 
 if (isset( $_POST["action"] ) ) {
 	$action = $_POST["action"];
@@ -28,6 +39,6 @@ case "inventory":
 	break;
 case "vend":
 default:
-	echo $vendlist[array_rand($vendlist, 1)];
+	echo format($vendlist[array_rand($vendlist, 1)]);
 	break;
 }
