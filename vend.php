@@ -8,6 +8,7 @@
 require_once( "vendlist.php" );
 
 $formats = array( 'text', 'json', 'serial', 'php' );
+$limit = 10;
 
 function format($data)
 {
@@ -29,14 +30,29 @@ function format($data)
 	}
 }
 
-if (isset( $_POST["action"] ) ) {
-	$action = $_POST["action"];
+function post_get($key, $default = null)
+{
+	$search = array($_POST, $_GET);
+	foreach( $search as $arr )
+	{
+		if ( array_key_exists($key, $arr))
+		{
+			return $arr[$key];
+		}
+	}
+	return $default;
 }
-elseif (isset( $_GET["action"] ) ) {
-	$action = $_GET["action"];
+
+$action = post_get('action', 'vend');
+$count = post_get('count','1');
+if ( is_numeric($count) )
+{
+	$count = (int)$count;
+	$count > $limit and $count = $limit;
 }
-else {
-	$action = "vend";
+else
+{
+	$count = 1;
 }
 switch ($action) {
 case "formats":
@@ -50,6 +66,20 @@ case "inventory":
 	break;
 case "vend":
 default:
-	echo format($vendlist[array_rand($vendlist, 1)]);
+	if ($count==1)
+	{
+		echo format($vendlist[array_rand($vendlist, 1)]);
+	}
+	else
+	{
+		$indicies = array_rand($vendlist, $count);
+		$values = array();
+		foreach($indicies as $index)
+		{
+			$values[] = $vendlist[$index];
+		}
+		echo format($values);
+	}
+	
 	break;
 }
