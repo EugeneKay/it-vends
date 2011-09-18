@@ -1,9 +1,8 @@
 <?php
 // It-Vends/index.php
 //
-// Copyright 2011 Eugene E. Kashpureff and Jeffrey C. Hoyt
-//
-// Consult the README file included with this program for License information.
+// Copyright 2011 by It Vends Authors. Consult the README file included with
+// this program for further information.
 //
 
 switch ($_SERVER['SERVER_PORT']) {

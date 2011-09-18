@@ -27,29 +27,35 @@ Table of Contents
 
 It Vends is a small, silly project to distribute items at random to the internet
 public. It also provides a basic API(via vend.php) to request items for usage by
-automated IRC bots or similar. A full RESTful API(with social integration) is
-planned, but not yet implemented.
+automated IRC bots or similar. A full RESTful API is in the testing phase, with
+support planned for social network integration.
 
 2) Copyright
 
-It Vends is Copyright 2011 by:
-*Eugene E. "EugeneKay" Kashpureff (eugene@kashpureff.org)
-*Jeffrey C. "Entomo" Hoyt (jchoyt@gmail.com)
-*William Cahill-Manley(william@cahillmanley.com)
-Portions are copyright by their authors, as marked in the source files or listed
-in the Acknowledgements section of this README file.
+It Vends is Copyright 2011 by the persons listed in the Authors section of this
+README document. Detailed authorship can be found by examing the source code
+repository via the "git-blame" command. 
 
-It Vends is pending trademark registration in The United States of America.
-Usage of this term(including the phrase "It Vends!") is permitted within reason
-and when used in a manner consistent with the image of the brand.
+The "It Vends" name is Copyright 2010 Eugene E. Kashpureff, and is pending 
+trademark registration in The United States of America. Usage of this term
+(including the phrase "It Vends!") is permitted within reason and when used in a
+manner consistent with the image of the brand.
 
 Included libraries(jQuery, Sizzle, jQuery UI) are copyright by their respective
 authors, as noted in their source files.
 
-3) Acknowledgements
+3) Authors
 
-*Miss "sannse", for providing the favicon.ico, based upon a Public Domain candy
-artwork.
+Maintainer:
+*Eugene E. "EugeneKay" Kashpureff (eugene@kashpureff.org)
+
+Primary Authors:
+*Eugene E. "EugeneKay" Kashpureff (eugene@kashpureff.org)
+*Jeffrey C. "Entomo" Hoyt (jchoyt@gmail.com)
+*William Cahill-Manley(william@cahillmanley.com)
+
+Contributors:
+*Miss sannse, for providing the favicon.ico, based upon Public Domain artwork.
 *Kyte, for help with typos and such.
 *Shadok, for contributions to the Items Pool.
 
@@ -78,7 +84,7 @@ under the terms of the GNU General Public License as published by the Free
 Software Foundation, either version 3 of the License, or (at your option) any
 later version. If you wish to obtain It Vends under another license(including a
 proprietary commercial license) for inclusion into other software or use in a
-situation where the GNU GPL is not acceptable, you may contact the Authors for
+situation where the GNU GPL is not acceptable, you may contact the Maintainer,
 further information. 
 
 When obtained under the GNU General Public License, It Vends is distributed in
@@ -87,6 +93,29 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details. You should have received a copy of
 the GNU General Public License along with It Vends. If not, you may obtain it at
 http://www.gnu.org/licenses/
+
+Any public distribution or fork of It Vends which differs substantially from the
+original must be rebranded to prevent confusion with the canonical installation
+located at http://itvends.com/ and the associated "It Vends" mark. Reference to
+It Vends is permitted(eg, "Based upon It Vends"), within the same 'reasonable'
+conditions of the mark. 
+
+Software or services which include It Vends code must maintain the Authors
+listing and License information contained in this document within their source
+code and any further redistributions. You may change the License to any license
+which is forward-compatible with the License under which you obtained It Vends,
+including any versions of the GNU General Public License higher than 3, or the
+GNU Affero General Public License version 3 or higher. If the License is altered 
+the restrictions upon the 'It Vends' mark, and the permission to redistribute
+under forward-compatible licenses must be maintained. Compliance with these
+requirements may be achieved by including this README file.
+
+Software or services which utilize It Vends in an unchanged or minimally modifed
+format(eg, dynamic or static linking of the code), or via the service at
+http://itvends.com/ may do so without further attribution, but any such
+attribution is appreciated if present. The suggested format is "Powered by It
+Vends (http://itvends.com/)", with the 'It Vends' mark being a hyperlink to the
+named website if the medium supports it. 
 
 The full source code for It Vends is available at 
 https://github.com/eugenekay/it-vends

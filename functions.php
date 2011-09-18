@@ -1,9 +1,8 @@
 <?php
 // It-Vends/functions.php
 //
-// Copyright 2011 Eugene E. Kashpureff and William Cahill-Manley
-//
-// Consult the README file included with this program for License information.
+// Copyright 2011 by It Vends Authors. Consult the README file included with
+// this program for further information.
 //
 
 function format($data) {

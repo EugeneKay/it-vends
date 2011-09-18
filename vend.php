@@ -1,9 +1,8 @@
 <?php
 // It-Vends/vend.php
 //
-// Copyright 2011 Eugene E. Kashpureff and Jeffrey C. Hoyt
-//
-// Consult the README file included with this program for License information.
+// Copyright 2011 by It Vends Authors. Consult the README file included with
+// this program for further information.
 //
 require_once("functions.php");
 require_once("vendlist.php");
