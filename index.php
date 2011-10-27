@@ -5,15 +5,7 @@
 // this program for further information.
 //
 
-require_once("functions.php");
-switch ($_SERVER['SERVER_PORT']) {
-case '443':
-	define ('PROTOCOL', 'https');
-	break;
-case '80':
-default:
-	define('PROTOCOL', 'http');
-}
+require_once("common.php");
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -57,10 +49,10 @@ default:
 //
 switch (@$_GET["action"]) {
 	case "vend":
-		echo "<div class=\"itvends-overlay\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".vend(1)."</div></div></div>";
+		echo "<div class=\"itvends-overlay\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".vend()."</div></div></div>";
 		break;
 	default:
-		echo "<div class=\"itvends-overlay hidden\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".vend(1)."</div></div></div>";
+		echo "<div class=\"itvends-overlay hidden\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".vend()."</div></div></div>";
 		
 	}
 ?>
