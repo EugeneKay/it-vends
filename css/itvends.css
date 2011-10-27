@@ -49,7 +49,9 @@
 	text-decoration: none;
 	color: #f00;
 }
-
+.hidden {
+       display: none; 
+}
 .itvends-overlay {
     width: 75%;
     padding: 10px;
