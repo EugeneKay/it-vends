@@ -15,9 +15,9 @@ require_once("vendlist.php");
 
 
 // What are we doing?
-$action = arg('action', 'vend');
+$action = arg("action", "vend");
 // How much would you like?
-$count = (int) arg('count','1');
+$count = (int) arg("count","1");
 
 // What are we doing again?
 switch ($action) {

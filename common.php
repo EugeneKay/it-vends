@@ -10,17 +10,18 @@
 //
 
 // Max items to vend
-define('ITEMLIMIT', 10);
+define("ITEMLIMIT", 10);
 
 // Request protocol
-switch (@$_SERVER['SERVER_PORT']) {
-case '443':
-	define('PROTOCOL', 'https');
+switch (@$_SERVER["SERVER_PORT"]) {
+case "443":
+	define("PROTOCOL", "https");
 	break;
-case '80':
+case "80":
 default:
-	define('PROTOCOL', 'http');
+	define("PROTOCOL", "http");
 }
+
 
 //
 // Preloaded Variables
@@ -55,7 +56,9 @@ require_once("vendlist.php");
 //
 // Format data for output in various types
 //
-// $data:
+// $data: Data to be formatted
+// $format: Output format to use
+// Return value: string containing the input formatted as desired
 function format($data, $format) {
 	// Use global variables for performance
 	global $formats, $text_seps;
@@ -63,7 +66,7 @@ function format($data, $format) {
 	// Ensure the format we're after is supported
 	$format = in_array($format, $formats) ? $format : "text";
 	
-	// Output based on format chosen
+	// Generate output based on format chosen
 	switch($format) {
 	case "php":
 		$return = var_export($data);
@@ -83,6 +86,7 @@ function format($data, $format) {
 		$return = is_array($data) ? implode( $sep, $data) : $data;
 	}
 	
+	// Send back the generated output
 	return $return;
 }
 
@@ -92,6 +96,7 @@ function format($data, $format) {
 //
 // $key: name of argument
 // $default: what to return if nothing else is found
+// Return value: value being sought out, or $default
 function arg($key, $default = null) {
 	// Where to look for arguments
 	$arg = array($_POST, $_GET);
@@ -111,9 +116,9 @@ function arg($key, $default = null) {
 //
 // Vend some items(or a single one)
 //
-// $qty: Number of items to return. If 0, send 1 item, but in plaintext
+// $qty: Number of items to return. If 0, send 1 item, but as string, not array
 // $special: Rate at which to return special items(0=0%, 100=100%)
-//
+// Return value: 0-indexed array of items(minimum 1), OR string if $qty==0
 function vend( $qty=0, $special=0 ) {
 	// Globalize variables for performance
 	global $vendlist, $vendspecial;
