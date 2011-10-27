@@ -1,5 +1,18 @@
 It-Vends/CHANGELOG
 
+v1.1-a2
+*Expand items in vend list
+*Remove contributions from Authors listing in README
+*Upgrade jQuery to 1.6.4
+*Move Changelog from README to CHANGELOG
+*Simplify vend.php's output generation to use a single for() loop
+*Update htaccess to allow ipv4/6 and testing subdomains
+*Enhance cross-domain compatibility
+*Add code commenting
+*Switch to 307 redirects to fix caching issues
+*Change default link to use GET instead of POST
+*Load the primary "Vend" button via AJAX instead of a full POST
+
 v1.1-a1
 *First revision of the REST API
  -Add multiple output formats, defaulting to "text"
