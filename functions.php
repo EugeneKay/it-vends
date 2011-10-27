@@ -41,3 +41,17 @@ function post_get($key, $default = null) {
 	}
 	return $default;
 }
+
+
+function vend( $qty=1 ) {
+	// Load items
+	require("vendlist.php");
+	
+	// Dole out items
+	for($i=0; $i < $qty; $i++) {
+		$items[]=$vendlist[array_rand($vendlist)];
+	}
+	
+	// Send items out
+	return $items;
+}

@@ -5,7 +5,7 @@
 // this program for further information.
 //
 
-require_once("vendlist.php");
+require_once("functions.php");
 switch ($_SERVER['SERVER_PORT']) {
 case '443':
 	define ('PROTOCOL', 'https');
@@ -29,27 +29,22 @@ default:
 		<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.16.js"></script>
 		<script type="text/javascript">
-		 $(document).ready(function() {
-			<?php	 for($i=0; $i < 10; $i++) { $values[]=$vendlist[array_rand($vendlist)]; }; ?>
-			 window.supply = <?=json_encode($values)?>;
-		         $( "#vendbutton" ).button();
-			 $( "#vendbutton").attr('href','#');
-			 $( "#vendbutton" ).click(function()
-			{
-				 $('#venditem').text( window.supply.pop() );
+		$(document).ready(function() {
+			window.supply = <?php echo json_encode(vend(10))?>;
+			$( "#vendbutton" ).button();
+			$( "#vendbutton").attr('href','#');
+			$( "#vendbutton" ).click(function() {
+				$('#venditem').text( window.supply.pop() );
 				$('.itvends-overlay').removeClass('hidden');
-				if ( window.supply.length < 10 )
-				{
-					$.getJSON('/vend.php?action=vend&count=10&format=json',
-					      function(data) {
-						     while (data.length > 0)
-						     {
+				if ( window.supply.length < 10 ) {
+					$.getJSON('/vend.php?action=vend&count=10&format=json', function(data) {
+						while (data.length > 0) {
 							window.supply.push(data.pop());
-						     }
-					      });
+						}
+					});
 				}
-			 });
-		 });
+			});	
+		});
 		</script>
 	</head>
 	<body><center>
@@ -62,10 +57,10 @@ default:
 //
 switch (@$_GET["action"]) {
 	case "vend":
-		echo "<div class=\"itvends-overlay\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".$vendlist[array_rand($vendlist, 1)]."</div></div></div>";
+		echo "<div class=\"itvends-overlay\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".vend(1)."</div></div></div>";
 		break;
 	default:
-		echo "<div class=\"itvends-overlay hidden\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".$vendlist[array_rand($vendlist, 1)]."</div></div></div>";
+		echo "<div class=\"itvends-overlay hidden\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".vend(1)."</div></div></div>";
 		
 	}
 ?>

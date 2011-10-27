@@ -8,9 +8,6 @@
 //  Load functions
 require_once("functions.php");
 
-// Load items
-require_once("vendlist.php");
-
 //
 // Definitions
 //
@@ -61,13 +58,8 @@ case "inventory":
 	break;
 case "vend":
 default:
-	// Make with the items!
-	for($i=0; $i < $count; $i++) {
-		$values[]=$vendlist[array_rand($vendlist)];
-	}
-	// List 'em
-	echo format($values);
-	
+	// IT VENDS!
+	echo format(vend($count));
 	break;
 }
 
