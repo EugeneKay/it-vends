@@ -30,6 +30,7 @@ public. It also provides a basic API(via vend.php) to request items for usage by
 automated IRC bots or similar. A full RESTful API is in the testing phase, with
 support planned for social network integration.
 
+
 2) Copyright
 
 It Vends is Copyright 2011 by the persons listed in the Authors section of this
@@ -44,6 +45,7 @@ further information.
 
 Included libraries(jQuery, Sizzle, jQuery UI) are copyright by their respective
 authors, as noted in their source files.
+
 
 3) Authors
 
@@ -60,25 +62,28 @@ Contributors:
 *Kyte
 *ShadowShadok
 
+
 4) Changelog
 
 Changelog for this release:
 
-v1.1-a2
-*Expand items in vend list
-*Remove contributions from Authors listing in README
-*Upgrade jQuery to 1.6.4
-*Move Changelog from README to CHANGELOG
-*Simplify vend.php's output generation to use a single for() loop
-*Update htaccess to allow ipv4/6 and testing subdomains
-*Enhance cross-domain compatibility
-*Add code commenting
-*Switch to 307 redirects to fix caching issues
-*Change default link to use GET instead of POST
-*Load the primary "Vend" button via AJAX instead of a full POST
+v1.1-b1
+*Lots of cleanup!
+-Consistent tab-usage & spacing
+-Change all string-delineating ' to "
+-Get rid of PHP short tags
+-Consistent braces
+*Add many comments
+*Refactoring
+-Move vending action into a vend() function
+*Move functions.php to common.php
+-Move over common variables & constants needed throughout
+*Add support for special items
+*Rename post_get() to arg()
 
 See the CHANGELOG file for historical entries, or the git source repository for
 per-commit change information.
+
 
 5) License
 
@@ -145,11 +150,13 @@ allowances of the MIT "Expat" License(included with It Vends as
 licenses/jQuery-ui-MIT.txt). You may obtain a copy of the jQuery User Interface
 library for your own use at (http://jqueryui.com/)
 
+
 6) Installation
 
 It Vends may be installed in the root directory of any VirtualHost. The current
 .htaccess assumes usage of the itvends.com domain and an Apache web server. Your
 setup will inevitably differ, and the domain should be changed accordingly.
+
 
 7) Contributions
 

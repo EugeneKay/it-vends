@@ -1,5 +1,19 @@
 It-Vends/CHANGELOG
 
+v1.1-b1
+*Lots of cleanup!
+-Consistent tab-usage & spacing
+-Change all string-delineating ' to "
+-Get rid of PHP short tags
+-Consistent braces
+*Add many comments
+*Refactoring
+-Move vending action into a vend() function
+*Move functions.php to common.php
+-Move over common variables & constants needed throughout
+*Add support for special items
+*Rename post_get() to arg()
+
 v1.1-a2
 *Expand items in vend list
 *Remove contributions from Authors listing in README
