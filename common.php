@@ -131,12 +131,12 @@ function vend( $qty=0, $special=0 ) {
 	// Dole out items
 	for($i=0; $i < $c; $i++) {
 		// Decide if we're gonna give out a special item
-		if( !$special && rand(1,100) >= $special ) {
-			// Pick a random item from the regular list
-			$items[]=$vendlist[array_rand($vendlist)];
-		} else {
+		if( $special && rand(1,100) <= $special ) {
 			// Pick a random item from the "special" list
 			$items[]=$vendspecial[array_rand($vendlist)];
+		} else {
+			// Pick a random item from the regular list
+			$items[]=$vendlist[array_rand($vendlist)];
 		}
 	}
 	// Send items out
