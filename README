@@ -39,7 +39,8 @@ repository via the "git-blame" command.
 The "It Vends" name is Copyright 2010 Eugene E. Kashpureff, and is pending 
 trademark registration in The United States of America. Usage of this term
 (including the phrase "It Vends!") is permitted within reason and when used in a
-manner consistent with the image of the brand.
+manner consistent with the image of the brand. See the License section below for
+further information.
 
 Included libraries(jQuery, Sizzle, jQuery UI) are copyright by their respective
 authors, as noted in their source files.
@@ -55,11 +56,13 @@ Primary Authors:
 *William Cahill-Manley(william@cahillmanley.com)
 
 Contributors:
-*Miss sannse, for providing the favicon.ico, based upon Public Domain artwork.
-*Kyte, for help with typos and such.
-*Shadok, for contributions to the Items Pool.
+*sannse
+*Kyte
+*ShadowShadok
 
 4) Changelog
+
+Changelog for this release:
 
 v1.1-a1
 *First revision of the REST API
@@ -77,21 +80,8 @@ v1.1-a1
  -Add explicit permission for Non-attribution when used as a service
 *Add Kindari(William Cahill-Manley) to the Primary Authors list
 
-v1.0.2
-*Update external libs to their most recent versions
-*Expand the Items Pool
-
-v1.0.1
-*Add Kyte to the Acknowledgements list
-*Typo corrections in the vendlist
-*Now passes W3C XHTML validation
-*Make the favicon.ico's path explicit in index.php
-
-v1.0
-*First production release
-*Index.php: Provides a large "Vend!" button for web browser users
-*Vend.php: Basic Vending API for use by scripts, eg IRC bots.
-*IT VENDS!
+See the CHANGELOG file for historical entries, or the git source repository for
+per-commit change information.
 
 5) License
 
@@ -108,30 +98,35 @@ the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
 implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details. You should have received a copy of
 the GNU General Public License along with It Vends. If not, you may obtain it at
-http://www.gnu.org/licenses/
+(http://www.gnu.org/licenses/)
 
-Any public distribution or fork of It Vends which differs substantially from the
-original must be rebranded to prevent confusion with the canonical installation
-located at http://itvends.com/ and the associated "It Vends" mark. Reference to
-It Vends is permitted(eg, "Based upon It Vends"), within the same 'reasonable'
-conditions of the mark. 
+Usage of the 'It Vends' mark is restricted to the primary It Vends website at
+(http://itvends.com), references to the original site, and references to the
+It Vends software which is distributed at (http://github.com/eugenekay/it-vends)
+Further permission is given to use this mark in a manner consistent with the
+purpose and image of the brand, eg, within the phrase "It Vends!".
+
+Any public distribution, fork or installation of It Vends which differs
+substantially from the original must be rebranded to prevent confusion with the
+canonical installation located at (http://itvends.com) and the associated 'It 
+Vends' mark. Reference to It Vends is permitted(eg, "Based upon It Vends"),
+within the same 'reasonable' conditions of the mark. Operation of a mirror site,
+containing only a faithful recreation of the original, is permitted, with the
+provision that it is to be marked as such.
 
 Software or services which include It Vends code must maintain the Authors
 listing and License information contained in this document within their source
 code and any further redistributions. You may change the License to any license
 which is forward-compatible with the License under which you obtained It Vends,
 including any versions of the GNU General Public License higher than 3, or the
-GNU Affero General Public License version 3 or higher. If the License is altered 
-the restrictions upon the 'It Vends' mark, and the permission to redistribute
-under forward-compatible licenses must be maintained. Compliance with these
-requirements may be achieved by including this README file.
+GNU Affero General Public License version 3 or higher. 
 
-Software or services which utilize It Vends in an unchanged or minimally modifed
-format(eg, dynamic or static linking of the code), or via the service at
-http://itvends.com/ may do so without further attribution, but any such
-attribution is appreciated if present. The suggested format is "Powered by It
-Vends (http://itvends.com/)", with the 'It Vends' mark being a hyperlink to the
-named website if the medium supports it. 
+Software or services which utilize It Vends in an unchanged or minimally altered
+format(eg, dynamic or static linking of the code), or via the service provided
+at (http://itvends.com may) do so without further attribution, but any such
+attribution is appreciated by the authors if present. The suggested format is:
+"Powered by It Vends (http://itvends.com)", with the 'It Vends' mark being a
+hyperlink to the named website, if the medium supports it. 
 
 The full source code for It Vends is available at 
 https://github.com/eugenekay/it-vends
@@ -139,19 +134,19 @@ https://github.com/eugenekay/it-vends
 It Vends includes the jQuery library, and it is distributed under the terms of
 the GNU General Public License, version 3, in accordance with the allowances of
 the MIT "Expat" License(included with It Vends as licenses/jQuery-MIT.txt). You
-may obtain a copy of the jQuery library for your own use at http://jquery.com/
+may obtain a copy of the jQuery library for your own use at (http://jquery.com/)
 
 It Vends includes the Sizzle.js library, and it is distributed under the terms
 of the GNU General Public License, version 3, in accordance with the allowances
 of the MIT "Expat" License(included with It Vends as licenses/Sizzle-MIT.txt).
 You may obtain a copy of the Sizzle.js library for your own use at
-http://sizzlejs.com/
+(http://sizzlejs.com/)
 
 It Vends includes the jQuery User Interface library, and it is distributed under
 the terms of the GNU General Public License, version 3, in accordance with the
 allowances of the MIT "Expat" License(included with It Vends as
 licenses/jQuery-ui-MIT.txt). You may obtain a copy of the jQuery User Interface
-library for your own use at http://jqueryui.com/
+library for your own use at (http://jqueryui.com/)
 
 6) Installation
 

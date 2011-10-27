@@ -1,5 +1,5 @@
 It-Vends/licenses/jQuery-MIT.txt
-MIT-License.txt from the jQuery library, version 1.6.2
+MIT-License.txt from the jQuery library, version 1.6.4
 
 Copyright (c) 2011 John Resig, http://jquery.com/
 
