@@ -36,17 +36,14 @@ default:
 	</head>
 	<body><center>
 		<div id="vendit">
-			<form action="/" id="awesome" method="post">
-				<input name="action" value="vend" type="hidden"/>
-				<a href="#" id="vendbutton"><span style="font-size:100px;">Vend!</span></a>
-			</form>
+				<a href="/?action=vend" id="vendbutton"><span style="font-size:100px;">Vend!</span></a>
 			<center>
 <?php
 //
 // IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS
 //
 require_once("vendlist.php");
-switch (@$_POST["action"]) {
+switch (@$_GET["action"]) {
 	case "vend":
 		echo "<div class=\"itvends-overlay\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".$vendlist[array_rand($vendlist, 1)]."</div></div></div>";
 		break;
