@@ -67,19 +67,15 @@ Contributors:
 
 Changelog for this release:
 
-v1.1-b1
-*Lots of cleanup!
--Consistent tab-usage & spacing
--Change all string-delineating ' to "
--Get rid of PHP short tags
--Consistent braces
-*Add many comments
-*Refactoring
--Move vending action into a vend() function
-*Move functions.php to common.php
--Move over common variables & constants needed throughout
-*Add support for special items
-*Rename post_get() to arg()
+v1.1-b2
+*Fix logic bug that lead to special items never being vend()ed
+*Fix typo in README
+*Changes to inlined JS for readability & W3C validation
+*Fix favicon - use PNG instead of ico
+*JS fix - work from front of array instead of end
+*Eliminate .php file suffix from request paths
+*Simplify DOM & generation thereof
+*Consolidate CSS
 
 See the CHANGELOG file for historical entries, or the git source repository for
 per-commit change information.

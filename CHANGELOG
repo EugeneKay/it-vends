@@ -1,5 +1,15 @@
 It-Vends/CHANGELOG
 
+v1.1-b2
+*Fix logic bug that lead to special items never being vend()ed
+*Fix typo in README
+*Changes to inlined JS for readability & W3C validation
+*Fix favicon - use PNG instead of ico
+*JS fix - work from front of array instead of end
+*Eliminate .php file suffix from request paths
+*Simplify DOM & generation thereof
+*Consolidate CSS
+
 v1.1-b1
 *Lots of cleanup!
 -Consistent tab-usage & spacing
