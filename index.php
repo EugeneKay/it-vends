@@ -21,22 +21,24 @@ require_once("common.php");
 		<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.16.js"></script>
 		<script type="text/javascript">
-		$(document).ready(function() {
-			window.supply = <?php echo json_encode(vend(10))?>;
-			$( "#vendbutton" ).button();
-			$( "#vendbutton").attr("href","#");
-			$( "#vendbutton" ).click(function() {
-				$("#venditem").text( window.supply.pop() );
-				$(".itvends-overlay").removeClass("hidden");
-				if ( window.supply.length < 10 ) {
-					$.getJSON("/vend.php?action=vend&count=10&format=json", function(data) {
-						while (data.length > 0) {
-							window.supply.push(data.pop());
-						}
-					});
+/* <![CDATA[ */
+$(document).ready(function() {
+	window.supply = <?php echo json_encode(vend(10))?>;
+	$( "#vendbutton" ).button();
+	$( "#vendbutton").attr("href","#");
+	$( "#vendbutton" ).click(function() {
+		$("#venditem").text( window.supply.pop() );
+		$(".itvends-overlay").removeClass("hidden");
+		if ( window.supply.length < 10 ) {
+			$.getJSON("/vend.php?action=vend&count=10&format=json", function(data) {
+				while (data.length > 0) {
+					window.supply.push(data.pop());
 				}
-			});	
-		});
+			});
+		}
+	});	
+});
+/* ]]> */
 		</script>
 	</head>
 	<body><center>
