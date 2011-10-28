@@ -15,7 +15,7 @@ require_once("common.php");
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
 		<title>It Vends!</title>
 		<base href="<?php echo PROTOCOL;?>://<?php echo $_SERVER["HTTP_HOST"]?>/"/>
-		<link rel="icon" type="image/png" href="favicon.ico"/>
+		<link rel="icon" type="image/png" href="img/favicon.png"/>
 		<link rel="stylesheet" type="text/css" href="css/itvends.css"/>
 		<link rel="stylesheet" type="text/css" href="css/start/jquery-ui-1.8.5.custom.css"/>
 		<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
