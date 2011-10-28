@@ -6,6 +6,7 @@
 
 # Enable URL rewriting
 RewriteEngine On
+RewriteBase /
 
 # Force usage of correct domain
 RewriteCond %{SERVER_PORT} ^80$
@@ -16,6 +17,6 @@ RewriteCond %{HTTP_HOST} !^(\w{1,16}\.){0,2}itvends\.com$ [NC]
 RewriteRule ^(.*)$ https://itvends.com/$1 [L,R=307]
 
 # Permit skipping of file ending
-RewriteCond %{REQUEST_URI} ^(?:/?)(.*)$
-RewriteCond %1.php -F [NC]
+RewriteCond %{REQUEST_FILENAME} !-F
+RewriteCond %{REQUEST_FILENAME}.php -F
 RewriteRule ^(.*)$ $1.php [L]
