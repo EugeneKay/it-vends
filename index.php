@@ -23,12 +23,12 @@ require_once("common.php");
 		<script type="text/javascript">
 /* <![CDATA[ */
 $(document).ready(function() {
-	window.supply = <?php echo json_encode(vend(10))?>;
+	window.supply = <?php echo json_encode(vend(10)); ?>;
 	$( "#vendbutton" ).button();
 	$( "#vendbutton").attr("href","#");
 	$( "#vendbutton" ).click(function() {
 		$("#venditem").text( window.supply.shift() );
-		$(".itvends-overlay").removeClass("hidden");
+		$("#itvends-overlay").removeClass("hidden");
 		if ( window.supply.length < 10 ) {
 			$.getJSON("/vend?action=vend&count=10&format=json", function(data) {
 				while (data.length > 0) {
@@ -41,27 +41,14 @@ $(document).ready(function() {
 /* ]]> */
 		</script>
 	</head>
-	<body><center>
+	<body>
 		<div id="vendit">
-				<a href="/?action=vend" id="vendbutton"><span style="font-size:100px;">Vend!</span></a>
-			<center>
-<?php
-//
-// IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS IT VENDS
-//
-switch (@$_GET["action"]) {
-	case "vend":
-		echo "<div class=\"itvends-overlay\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".vend()."</div></div></div>";
-		break;
-	default:
-		echo "<div class=\"itvends-overlay hidden\"><div id=\"itvends\">IT VENDS!<div id=\"venditem\">".vend()."</div></div></div>";
-		
-	}
-?>
-			</center>
+			<a href="/?action=vend" id="vendbutton"><span>Vend!</span></a>
 		</div>
-		
-		</center>
+		<div id="itvends-overlay" class="<?php if (arg("action", FALSE)!="vend") { echo "hidden"; } ?>">
+			<div id="itvends">IT VENDS!</div>
+			<div id="venditem"><?php echo vend(); ?></div>
+		</div>
 		<div id="footer"><div>Code available on <a href="https://github.com/eugenekay/it-vends">GitHub</a> under the terms of the <a href="https://www.gnu.org/licenses/gpl.html">GPL</a></div></div>
 	</body>
 </html>
