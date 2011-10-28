@@ -14,3 +14,8 @@ RewriteRule ^(.*)$ http://itvends.com/$1 [L,R=307]
 RewriteCond %{SERVER_PORT} ^443$
 RewriteCond %{HTTP_HOST} !^(\w{1,16}\.){0,2}itvends\.com$ [NC]
 RewriteRule ^(.*)$ https://itvends.com/$1 [L,R=307]
+
+# Permit skipping of file ending
+RewriteCond %{REQUEST_URI} ^(?:/?)(.*)$
+RewriteCond %1.php -F [NC]
+RewriteRule ^(.*)$ $1.php [L]
