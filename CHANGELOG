@@ -1,5 +1,8 @@
 It-Vends/CHANGELOG
 
+v1.1.0
+*Minor vend list modifications
+
 v1.1-b2
 *Fix logic bug that lead to special items never being vend()ed
 *Fix typo in README
