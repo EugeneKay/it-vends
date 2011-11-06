@@ -28,7 +28,7 @@ $(document).ready(function() {
 	$( "#vendbutton").attr("href","#");
 	$( "#vendbutton" ).click(function() {
 		$("#venditem").text( window.supply.shift() );
-		$("#itvends-overlay").removeClass("hidden");
+		$("#itvends-overlay").show().delay(15000).fadeOut(500);
 		if ( window.supply.length < 10 ) {
 			$.getJSON("/vend?action=vend&count=10&format=json", function(data) {
 				while (data.length > 0) {
