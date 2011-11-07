@@ -1,5 +1,10 @@
 It-Vends/CHANGELOG
 
+v1.2-a1
+*Remove extraneous information from tail of GPL text
+*Implement timed fading-out of the "IT VENDS! <item>" segment
+*Add the jQuery doTimeout plugin to support fadeout
+
 v1.1.0
 *Minor vend list modifications
 

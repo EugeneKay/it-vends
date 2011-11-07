@@ -67,8 +67,10 @@ Contributors:
 
 Changelog for this release:
 
-v1.1.0
-*Minor vend list modifications
+v1.2-a1
+*Remove extraneous information from tail of GPL text
+*Implement timed fading-out of the "IT VENDS! <item>" segment
+*Add the jQuery doTimeout plugin to support fadeout
 
 See the CHANGELOG file for historical entries, or the git source repository for
 per-commit change information.
