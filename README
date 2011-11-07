@@ -43,8 +43,8 @@ trademark registration in The United States of America. Usage of this term
 manner consistent with the image of the brand. See the License section below for
 further information.
 
-Included libraries(jQuery, Sizzle, jQuery UI) are copyright by their respective
-authors, as noted in their source files.
+Included libraries(jQuery, Sizzle, jQuery UI, jQuery doTimeout) are copyright by
+their respective authors, as noted in their source files.
 
 
 3) Authors
@@ -138,6 +138,12 @@ the terms of the GNU General Public License, version 3, in accordance with the
 allowances of the MIT "Expat" License(included with It Vends as
 licenses/jQuery-ui-MIT.txt). You may obtain a copy of the jQuery User Interface
 library for your own use at (http://jqueryui.com/)
+
+It Vends includes the jQuery doTimeout plugin, and it is distributed under the
+terms of the GNU General Public License, version 3, in accordance with the
+allowances of the MIT "Expat" License(included ith It Vends as 
+licenses/jquery-dotimeout-MIT.txt). You may obtain a copy of jQuery doTimeout
+for oyur own use at (http://benalman.com/projects/jquery-dotimeout-plugin/)
 
 
 6) Installation

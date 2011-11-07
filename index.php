@@ -20,6 +20,7 @@ require_once("common.php");
 		<link rel="stylesheet" type="text/css" href="css/start/jquery-ui-1.8.5.custom.css"/>
 		<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.16.js"></script>
+		<script type="text/javascript" src="js/jquery-plugins.js"></script>
 		<script type="text/javascript">
 /* <![CDATA[ */
 $(document).ready(function() {
@@ -28,7 +29,7 @@ $(document).ready(function() {
 	$( "#vendbutton").attr("href","#");
 	$( "#vendbutton" ).click(function() {
 		$("#venditem").text( window.supply.shift() );
-		$("#itvends-overlay").show().delay(15000).fadeOut(500);
+		$("#itvends-overlay").show().doTimeout("itvends-timeout", 10000, "fadeOut", "1000");
 		if ( window.supply.length < 10 ) {
 			$.getJSON("/vend?action=vend&count=10&format=json", function(data) {
 				while (data.length > 0) {

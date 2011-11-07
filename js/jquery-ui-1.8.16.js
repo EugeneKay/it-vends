@@ -1,4 +1,4 @@
-/*!
+/*
  * It-Vends/js/jquery-UI-1.8.14.js
  *
  * jQuery UI 1.8.16
