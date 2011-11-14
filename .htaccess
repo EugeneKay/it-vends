@@ -15,8 +15,12 @@ RewriteBase /
 ## Some Redirects
 
 # Google+
-RewriteCond %{REQUEST_URI} ^(?:/)(plus|\+) [NC]
+RewriteCond %{REQUEST_URI} ^(?:/?)(\+|p(lus)?)$ [NC]
 RewriteRule ^(.*)$ https://plus.google.com/b/114734030767381414604/114734030767381414604 [L,R=307]
+
+# Github
+RewriteCond %{REQUEST_URI} ^(?:/?)(g(it(hub)?)?|s(ource)?)$ [NC]
+RewriteRule ^(.*)$ https://github.com/eugenekay/it-vends [L,R=307]
 
 ## Correct Domain
 RewriteCond %{SERVER_PORT} ^80$
