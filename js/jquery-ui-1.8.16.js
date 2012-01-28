@@ -5,7 +5,7 @@
  *
  * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * Distributed under GNU GPL license, version 3, via the MIT Expat License. 
+ * Distributed under GNU GPL license, version 3, via the MIT Expat License.
  * Consult the README file included with this program for further information.
  *
  */
@@ -23,7 +23,7 @@ c.ui.isOverAxis(b,e,i)}})}})(jQuery);
  *
  * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * Distributed under GNU GPL license, version 3, via the MIT Expat License. 
+ * Distributed under GNU GPL license, version 3, via the MIT Expat License.
  * Consult the README file included with this program for further information.
  *
  */
@@ -38,7 +38,7 @@ c);return this},enable:function(){return this._setOption("disabled",false)},disa
  *
  * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * Distributed under GNU GPL license, version 3, via the MIT Expat License. 
+ * Distributed under GNU GPL license, version 3, via the MIT Expat License.
  * Consult the README file included with this program for further information.
  *
  */

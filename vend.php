@@ -18,25 +18,27 @@ require_once("vendlist.php");
 $action = arg("action", "vend");
 // How much would you like?
 $count = (int) arg("count","1");
+// How would you like it?
+$format = arg("format", "text");
 
 // What are we doing again?
 switch ($action) {
 case "formats":
 	// List valid output formats
-	echo format($formats, arg("format", "text"));
+	echo format($formats, $format);
 	break;
 case "give":
 	// Load an item into the vendlist
-	echo format(array("Item giving is currently not supported. Sorry"), arg("format", "text"));
+	echo format(array("Item giving is currently not supported. Sorry"), $format);
 	break;
 case "inventory":
 	// List items in the machine
-	echo format($vendlist, arg("format", "text"));
+	echo format($vendlist, $format);
 	break;
 case "vend":
 default:
 	// IT VENDS!
-	echo format(vend($count), arg("format"));
+	echo format(vend($count), $format);
 	break;
 }
 

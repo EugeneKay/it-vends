@@ -56,11 +56,11 @@
 	color: #f00;
 }
 .hidden {
-	display: none; 
+	display: none;
 }
 body
 {
 	background:#ffffff url('/img/machine.jpg') no-repeat center top;
-	font-family: Verdana,Arial,sans-serif; 
+	font-family: Verdana,Arial,sans-serif;
 	font-size: 1.1em;
 }

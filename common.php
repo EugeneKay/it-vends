@@ -25,7 +25,7 @@ default:
 
 //
 // Preloaded Variables
-// 
+//
 
 // Valid output formats
 $formats = array("text", "json", "serial", "php");
@@ -59,7 +59,7 @@ require_once("vendlist.php");
 // $data: Data to be formatted
 // $format: Output format to use
 // Return value: string containing the input formatted as desired
-function format($data, $format) {
+function format($data, $format = "text") {
 	// Use global variables for performance
 	global $formats, $text_seps;
 	

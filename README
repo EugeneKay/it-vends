@@ -35,9 +35,9 @@ support planned for social network integration.
 
 It Vends is Copyright 2011 by the persons listed in the Authors section of this
 README document. Detailed authorship can be found by examing the source code
-repository via the "git-blame" command. 
+repository via the "git-blame" command.
 
-The "It Vends" name is Copyright 2010 Eugene E. Kashpureff, and is pending 
+The "It Vends" name is Copyright 2010 Eugene E. Kashpureff, and is pending
 trademark registration in The United States of America. Usage of this term
 (including the phrase "It Vends!") is permitted within reason and when used in a
 manner consistent with the image of the brand. See the License section below for
@@ -50,10 +50,10 @@ their respective authors, as noted in their source files.
 3) Authors
 
 Maintainer:
-*Eugene E. "EugeneKay" Kashpureff (eugene@kashpureff.org)
+*Eugene E. Kashpureff Jr (eugene@kashpureff.org)
 
 Primary Authors:
-*Eugene E. "EugeneKay" Kashpureff (eugene@kashpureff.org)
+*Eugene E. Kashpureff Jr (eugene@kashpureff.org)
 *Jeffrey C. "Entomo" Hoyt (jchoyt@gmail.com)
 *William Cahill-Manley(william@cahillmanley.com)
 
@@ -84,7 +84,7 @@ Software Foundation, either version 3 of the License, or (at your option) any
 later version. If you wish to obtain It Vends under another license(including a
 proprietary commercial license) for inclusion into other software or use in a
 situation where the GNU GPL is not acceptable, you may contact the Maintainer
-for further information. 
+for further information.
 
 When obtained under the GNU General Public License, It Vends is distributed in
 the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
@@ -101,7 +101,7 @@ purpose and image of the brand, eg, within the phrase "It Vends!".
 
 Any public distribution, fork or installation of It Vends which differs
 substantially from the original must be rebranded to prevent confusion with the
-canonical installation located at (http://itvends.com) and the associated 'It 
+canonical installation located at (http://itvends.com) and the associated 'It
 Vends' mark. Reference to It Vends is permitted(eg, "Based upon It Vends"),
 within the same 'reasonable' conditions of the mark. Operation of a mirror site,
 containing only a faithful recreation of the original, is permitted, with the
@@ -112,16 +112,16 @@ listing and License information contained in this document within their source
 code and any further redistributions. You may change the License to any license
 which is forward-compatible with the License under which you obtained It Vends,
 including any versions of the GNU General Public License higher than 3, or the
-GNU Affero General Public License version 3 or higher. 
+GNU Affero General Public License version 3 or higher.
 
 Software or services which utilize It Vends in an unchanged or minimally altered
 format(eg, dynamic or static linking of the code), or via the service provided
-at (http://itvends.com may) do so without further attribution, but any such
-attribution is appreciated by the authors if present. The suggested format is:
+at (http://itvends.com) may do so without further attribution, but any such
+attribution is appreciated by the authors, if present. The suggested format is:
 "Powered by It Vends (http://itvends.com)", with the 'It Vends' mark being a
-hyperlink to the named website, if the medium supports it. 
+hyperlink to the named website, if the medium supports it.
 
-The full source code for It Vends is available at 
+The full source code for It Vends is available at
 https://github.com/eugenekay/it-vends
 
 It Vends includes the jQuery library, and it is distributed under the terms of
@@ -143,7 +143,7 @@ library for your own use at (http://jqueryui.com/)
 
 It Vends includes the jQuery doTimeout plugin, and it is distributed under the
 terms of the GNU General Public License, version 3, in accordance with the
-allowances of the MIT "Expat" License(included ith It Vends as 
+allowances of the MIT "Expat" License(included with It Vends as
 licenses/jquery-dotimeout-MIT.txt). You may obtain a copy of jQuery doTimeout
 for oyur own use at (http://benalman.com/projects/jquery-dotimeout-plugin/)
 
@@ -152,7 +152,7 @@ for oyur own use at (http://benalman.com/projects/jquery-dotimeout-plugin/)
 
 It Vends may be installed in the root directory of any VirtualHost. The current
 .htaccess assumes usage of the itvends.com domain and an Apache web server. Your
-setup will inevitably differ, and the domain should be changed accordingly.
+setup will inevitably differ, and the configuration should be changed to fit.
 
 
 7) Contributions
