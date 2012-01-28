@@ -135,7 +135,7 @@ function vend( $qty = 0, $special = 5 ) {
 		// Decide if we're gonna give out a special item
 		if( $special && rand(1, 100) <= $special ) {
 			// Pick a random item from the "special" list
-			$items[] = $vendspecial[array_rand($vendlist)];
+			$items[] = $vendspecial[array_rand($vendspecial)];
 		} else {
 			// Pick a random item from the regular list
 			$items[] = $vendlist[array_rand($vendlist)];
