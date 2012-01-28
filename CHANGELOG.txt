@@ -1,4 +1,7 @@
-It-Vends/CHANGELOG
+#
+# CHANGELOG.txt
+# it-vends
+#
 
 v1.2-a1
 *Remove extraneous information from tail of GPL text

@@ -1,8 +1,10 @@
-# It-Vends/.htaccess
-##
-## Copyright 2011 by It Vends Authors. Consult the README file included with
-## this program for further information.
-##
+# 
+# .htaccess
+# it-vends
+#
+# Copyright 2011 by It Vends Authors. Consult the README file included with
+# this program for further information.
+#
 
 # Enable URL rewriting
 RewriteEngine On

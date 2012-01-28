@@ -1,5 +1,6 @@
 /*
- * It-Vends/js/jquery-plugins.js
+ * js/jquery-plugins.js
+ * it-vends
  *
  * jQuery doTimeout: Like setTimeout, but better! - v1.0 - 3/3/2010
  * http://benalman.com/projects/jquery-dotimeout-plugin/

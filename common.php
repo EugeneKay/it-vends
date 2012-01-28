@@ -1,5 +1,6 @@
 <?php
-// It-Vends/common.php
+// common.php
+// it-vends
 //
 // Copyright 2011 by It Vends Authors. Consult the README file included with
 // this program for further information.
@@ -10,16 +11,16 @@
 //
 
 // Max items to vend
-define("ITEMLIMIT", 10);
+define('ITEMLIMIT', 10);
 
 // Request protocol
-switch (@$_SERVER["SERVER_PORT"]) {
-case "443":
-	define("PROTOCOL", "https");
+switch (@$_SERVER['SERVER_PORT']) {
+case '443':
+	define('PROTOCOL', 'https');
 	break;
-case "80":
+case '80':
 default:
-	define("PROTOCOL", "http");
+	define('PROTOCOL', 'http');
 }
 
 
@@ -28,16 +29,17 @@ default:
 //
 
 // Valid output formats
-$formats = array("text", "json", "serial", "php");
+$formats = array('text', 'json', 'serial', 'php');
 
 // Text separators
 $text_seps = array(
-	"cr"	=>	"\r",
-	"lf"	=>	"\n",
-	"crlf"	=>	"\r\n",
-	"comma"	=>	",",
-	"newline"	=>	"\n",
-	"br"	=>	"<br />",
+	'cr'	=>	"\r",
+	'lf'	=>	"\n",
+	'crlf'	=>	"\r\n",
+	'comma'	=>	',',
+	'tab'	=>	"\t",
+	'newline'	=>	"\n",
+	'br'	=>	'<br />',
 );
 
 //
@@ -45,7 +47,7 @@ $text_seps = array(
 //
 
 // Load items
-require_once("vendlist.php");
+require_once 'vendlist.php';
 
 
 //
@@ -59,30 +61,30 @@ require_once("vendlist.php");
 // $data: Data to be formatted
 // $format: Output format to use
 // Return value: string containing the input formatted as desired
-function format($data, $format = "text") {
+function format($data, $format = 'text') {
 	// Use global variables for performance
 	global $formats, $text_seps;
 	
 	// Ensure the format we're after is supported
-	$format = in_array($format, $formats) ? $format : "text";
+	$format = in_array($format, $formats) ? $format : 'text';
 	
 	// Generate output based on format chosen
 	switch($format) {
-	case "php":
+	case 'php':
 		$return = var_export($data);
 		break;
-	case "serial":
+	case 'serial':
 		$return = serialize($data);
 		break;
-	case "json":
-		header("Content-type: application/json");
+	case 'json':
+		header('Content-type: application/json');
 		$return = json_encode($data);
 		break;
-	case "text":
+	case 'text':
 	default:
-		header("Content-type: text/plain");
-		$sep = arg("sep","lf");
-		$sep = array_key_exists($sep, $text_seps) ? $text_seps[$sep] : $text_seps["lf"];
+		header('Content-type: text/plain');
+		$sep = arg('sep', 'lf');
+		$sep = array_key_exists($sep, $text_seps) ? $text_seps[$sep] : $text_seps['lf'];
 		$return = is_array($data) ? implode( $sep, $data) : $data;
 	}
 	
@@ -118,29 +120,29 @@ function arg($key, $default = null) {
 //
 // $qty: Number of items to return. If 0, send 1 item, but as string, not array
 // $special: Rate at which to return special items(0=0%, 100=100%)
-// Return value: 0-indexed array of items(minimum 1), OR string if $qty==0
-function vend( $qty=0, $special=0 ) {
+// Return value: 0-indexed array of items(minimum 1), OR string if $qty == 0
+function vend( $qty = 0, $special = 0 ) {
 	// Globalize variables for performance
 	global $vendlist, $vendspecial;
 	
-	if ($qty==0) {
-		$c=1;
+	if ($qty == 0) {
+		$c = 1;
 	} else {
-		$c=min($qty, ITEMLIMIT);
+		$c = min($qty, ITEMLIMIT);
 	}
 	// Dole out items
-	for($i=0; $i < $c; $i++) {
+	for($i = 0; $i < $c; $i++) {
 		// Decide if we're gonna give out a special item
-		if( $special && rand(1,100) <= $special ) {
+		if( $special && rand(1, 100) <= $special ) {
 			// Pick a random item from the "special" list
-			$items[]=$vendspecial[array_rand($vendlist)];
+			$items[] = $vendspecial[array_rand($vendlist)];
 		} else {
 			// Pick a random item from the regular list
-			$items[]=$vendlist[array_rand($vendlist)];
+			$items[] = $vendlist[array_rand($vendlist)];
 		}
 	}
 	// Send items out
-	if ($qty==0) {
+	if ($qty == 0) {
 		return $items[0];
 	} else {
 		return $items;

@@ -1,5 +1,6 @@
 /*
- * It-Vends/js/jquery-UI-1.8.14.js
+ * js/jquery-UI-1.8.14.js
+ * it-vends
  *
  * jQuery UI 1.8.16
  *

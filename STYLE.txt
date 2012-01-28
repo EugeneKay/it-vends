@@ -1,0 +1,225 @@
+#
+# STYLE.txt
+# it-vends
+#
+
+Table of Contents
+	1) Language and Spelling
+	1) Spacing conventions
+	2) File headers
+	3) Comments
+	4) PHP Considerations
+
+
+1) Language and Spelling
+The primary language of the project is English. All code should be written in US
+English. This includes file names, variables, comments, and inline documenting.
+External documentation can(and should) be internationalized, but the English
+version is considered to be canon. Use the US variant of words, such as "color"
+instead of "colour", and "gasoline" instead of "petrol". 
+
+
+2) Files
+
+File and directory names should be in lowercase, with as few words as possible
+in use. Separate words with an underscore if it is unavoidable. Files which are
+replacing or extending a parent file should use a dash between the parent file's
+name and the qualifer. For example, "site.php" and "site-www.example.com.php"
+
+Files intended for documentation(README, INSTALL) should be named in uppercase,
+with a ".txt" extension for the benefit of Windows systems.
+
+All files should have an extension matching their contents.
+
+File headers shall consist of a minimum of 5 lines, prior to the beginning of
+any file content:
+	1) Interpreter("#!" aka shebang), script delimiter("<?php") or an empty
+		comment line (//, /*, #, etc)
+	2) Files path relative to the Repo's root, commented("// foo/bar.php").
+		For file types requiring delimited comments AND a shebang, this
+		line should hold the opening delimiter.
+	3) Project/Repo which the file belongs to, commented("// it-vends").
+	4) Empty comment line or closing delimiter.(//, */, #, etc)
+	5) OPTIONAL: A description of the file's contents and purpose. If used,
+		this should end with an empty comment line akin to #4.
+	6) An empty line separating the header from the content
+
+
+3) Spacing
+
+Indenting shall be done with the "tab" character. A tab width of 8 characters is
+suggested for your editor. This width is assumed for all line length figures.
+
+Lines longer than 100 columns shall be wrapped before the 80 column mark, split
+at a reasonable point within the "flow" of code. Lines between 80 and 100 cols
+are not required to be wrapped, but doing so is suggested, except within plain-
+text files(.txt), where they MUST be wrapped at 80 columns, for terminal
+compatibility.
+
+Trailing spaces are prohibited. Failing to snip them off will result in a pack
+of rabid weasels being dispatched to your undergarments. Tabs on "empty" lines
+are required to maintain indent flow.
+
+Files should be formatted with a newline, "\n", as their end-of-line character
+(UNIX format), never "\r\n"(Windows format) or "\r"(Mac format). Files should
+end in a newline(last line empty).
+
+Separate "paragraphs" with a single empty line, and "sections" with two empty
+lines.
+
+
+4) Bracing
+
+Use the "One True Brace Style" when building control structures. The opening
+bracket should be placed on the same line of an opening statement, and the final
+bracket placed on a separate line on the same indent level as the statement it
+was opened by. In other words, it should be possible to insert new code at any
+point around a brace without "breaking" the control structure. Example:
+if ($foo == 'bar') {
+	dostuff();
+	morestuff();
+}
+
+
+5) Comments
+
+Comments should be short, meaningful sentences preceding what they describe. One
+comment per line of code is suggested, even where the meaning ought to be
+obvious - remember that code evolves over time! If more than one line is needed,
+summarize the point, and then place your explanation BELOW the line/block being
+explained, with an empty line separating it from following lines. General "flow"
+descriptions can be in paragraph format, but should have an empty line before
+and after.
+
+Use the following comment styles:
+	1) PHP: double-slash("// Comment Text")
+	2) HTML: Comment tags("<!-- Comment Text -->")
+	3) JavaScript: double-slash("// Comment Text")
+	4) CSS: slash-star delimited("/* Comment Text */"), interims using " *"
+	5) Shell: Hash("# Comment Text")
+	6) Plain text: Hash("# Comment Text"), only needed in "header"
+
+
+6) PHP Considerations
+
+6.1) Language Version
+
+PHP 5.3.0 is assumed, and any features present in that version may be used. The
+latest widely-deployed version is assumed to be used when testing, and corner
+cases which have been changed between 5.3.0 and the version deployed should be
+handled sanely.
+
+6.2) Operators
+
+All binary operators(operators that come between two values), such as +, -, =,
+!=, ==, and >, should have a space before and after the operator.
+
+Unary operators(those which work on a single value) such as ++ and --, should
+not have a space between them and the variable or number they are operations on.
+
+6.3) Casting 
+
+Put a space between the type and the variable name when using casting. Example:
+(int) $i = 0;
+
+6.4) Parenthesis
+
+Do not place a space between an opening parenthesis and the first item inside of
+it, or between the final item and the closing parenthesis. 
+
+Parenthesis blocks which exceed the maximum line length should be split onto
+multiple lines, with each comma-separated item having its own line. Indent as if
+the parenthesis were a braced block, with the closing parenthesis on its own
+line, even with the beginning of the line which it was opened by. The first item
+after the opening parenthesis should be moved to its own line.
+
+6.5) Control Structures
+
+Place a single space between the control keyword and the opening parenthesis to
+distinguish them from function calls.
+
+Use curly braces in all structures where they are suggested-but-optional, such
+as the "for" operator. Leave some ASCII art if you can't figure out what else to
+do with the space.
+
+6.6) Functions
+
+Function calls should have no space between the function name and the following
+parenthesis, to distinguish them from control structures.
+
+Function declarations should be proceeded by a summary of the function, which
+should include:
+	1) Function name
+	2) Definition of its behaviour
+	3) Listing of the required and optional parameters when calling
+	4) Possible return values
+
+All parameters should have a default value defined. Parameters should be ordered
+from most to least important. In other words, omitting the first parameter might
+cause the function to return FALSE / fail without doing anything, but the last
+value specifies a sorting order, with a sane default.
+
+Return values should be TRUE, FALSE, or a meaningful value. Do not use return
+codes such as "-1", or "0".
+
+6.7) Class Constructors
+
+Include parentheses when calling a class constructor with no arguments, to keep
+consistency with those which do use arguments.
+
+6.8) Arrays
+
+The array() function should be formatted with a space separating each element,
+in line with the "Parenthesis" syntax, and spaces around the key association
+operator if it is used.
+
+6.9) PHP Code Delimeters
+
+Always use <?php and ?> to delmit PHP code, never the shorthand <? ?> or any of
+the alternate forms.
+
+Never include a ?> at the end of a .php file. If you do, unwanted whitespace
+will creep in, causing "Header already sent" errors and possible XHTML/XML
+validation errors.
+
+6.10) Semicolons
+
+Semicolons are required as an end-of-line character, and should not be omitted
+at the end of code blocks. This behaviour is allowed by the parser for one-line
+blocks, but makes for trouble when adding to them.
+
+6.11) Naming Conventions
+
+Functions and variables should be named using lowercase, with words separated by
+an underscore.
+
+Local or temporary variables(such as $i or $file) do not need to have a prefix
+attached, but be aware that these can and will be stomped on at any time. Please
+restrict un-prefixed usage to function-local scope.
+
+Constants should be all-uppercase, with underscores between words.
+
+Classes should be named using CamelCase, with the ExtensionName prefixed without
+use of an underscore.
+
+6.12) Strings
+
+Strings should be quoted with single-quotes, not double-quotes. Where it is not
+possible to do this, such as to include a character that requires escaping, use
+single quotes only around that character. Newlines should be placed usng the EOL
+constant, not by concatenating "\n". The rationale behind this is that single
+quotes are known to be faster, as no checking for $variables is required by the
+parser.
+
+Concatenation(use of a dot) is considered to be a binary operator, and should be
+separated by a space as such.
+
+6.13) Output
+
+Use the echo construct to output strings directly. Do not use parenthesis(it is
+NOT a function!) around the strings being output. Separate strings with a comma
+instead of concatenating. This is quicker, because the parser does not have to
+build the final string before spitting it out.
+
+HEREDOC syntax is discouraged. If you have a lot of preformatted output, drop
+out of PHP mode using ?> and then resume it with <?php when you're finished.

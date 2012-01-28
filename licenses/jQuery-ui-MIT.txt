@@ -1,5 +1,9 @@
-It-Vends/licenses/jQuery-ui-MIT.txt
-MIT License from the jQuery User Interface library, version 1.8.16
+#
+# licenses/jQuery-ui-MIT.txt
+# it-vends
+#
+# MIT License from the jQuery User Interface library, version 1.8.16
+#
 
 Copyright (c) 2011 Paul Bakaus, http://jqueryui.com/
 

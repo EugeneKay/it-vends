@@ -1,5 +1,6 @@
 <?php
-// It-Vends/vendlist.php
+// vendlist.php
+// it-vends
 //
 // Copyright 2011 by It Vends Authors. Consult the README file included with
 // this program for further information.

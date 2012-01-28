@@ -1,5 +1,9 @@
-It-Vends/licenses/jQuery-doTimeout-MIT.txt
-MIT License from jQuery doTimeout plugin, version 1.0
+#
+# licenses/jQuery-doTimeout-MIT.txt
+# it-vends
+#
+# MIT License from jQuery doTimeout plugin, version 1.0
+#
 
 Copyright (c) 2010 "Cowboy" Ben Alman
 
