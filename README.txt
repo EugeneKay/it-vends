@@ -70,10 +70,14 @@ Contributors:
 
 Changelog for this release:
 
-v1.2-a1
-*Remove extraneous information from tail of GPL text
-*Implement timed fading-out of the "IT VENDS! <item>" segment
-*Add the jQuery doTimeout plugin to support fadeout
+v1.2-a2
+*Upgrade jQuery to 1.7.1
+*Add STYLE.txt containing style guidelines
+*Plethora of changes to meet style guidelines
+*Correct name for Eugene in README
+*Add .txt extensions to README/CHANGELOG/etc
+*vend.php: set $format once, using a single call to arg()
+*Vend list: separate items into "normal" and special" arrays.
 
 See the CHANGELOG file for historical entries, or the git source repository for
 per-commit change information.
