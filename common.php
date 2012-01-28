@@ -121,7 +121,7 @@ function arg($key, $default = null) {
 // $qty: Number of items to return. If 0, send 1 item, but as string, not array
 // $special: Rate at which to return special items(0=0%, 100=100%)
 // Return value: 0-indexed array of items(minimum 1), OR string if $qty == 0
-function vend( $qty = 0, $special = 5 ) {
+function vend( $qty = 0, $special = 10 ) {
 	// Globalize variables for performance
 	global $vendlist, $vendspecial;
 	
