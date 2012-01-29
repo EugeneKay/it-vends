@@ -1,5 +1,9 @@
-It-Vends/licenses/Sizzle-MIT.txt
-MIT License from the Sizzle library, version 1.5.1
+#
+# licenses/Sizzle-MIT.txt
+# it-vends
+#
+# MIT License from the Sizzle library, version 1.5.1
+#
 
 Copyright (c) 2009 John Resig
 

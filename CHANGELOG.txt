@@ -1,4 +1,25 @@
-It-Vends/CHANGELOG
+#
+# CHANGELOG.txt
+# it-vends
+#
+
+v1.2-rc1
+*common.php: Use correct array when vending special items
+*Increase rate of special items to 10%
+
+v1.2-a2
+*Upgrade jQuery to 1.7.1
+*Add STYLE.txt containing style guidelines
+*Plethora of changes to meet style guidelines
+*Correct name for Eugene in README
+*Add .txt extensions to README/CHANGELOG/etc
+*vend.php: set $format once, using a single call to arg()
+*Vend list: separate items into "normal" and special" arrays.
+
+v1.2-a1
+*Remove extraneous information from tail of GPL text
+*Implement timed fading-out of the "IT VENDS! <item>" segment
+*Add the jQuery doTimeout plugin to support fadeout
 
 v1.1.1
 *Add Github & Google+ shortlinks to .htaccess
