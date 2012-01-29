@@ -1,5 +1,9 @@
 It-Vends/CHANGELOG
 
+v1.1.1
+*Add Github & Google+ shortlinks to .htaccess
+*Improve comments in .htaccess
+
 v1.1.0
 *Minor vend list modifications
 

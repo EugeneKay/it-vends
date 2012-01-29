@@ -67,8 +67,9 @@ Contributors:
 
 Changelog for this release:
 
-v1.1.0
-*Minor vend list modifications
+v1.1.1
+*Add Github & Google+ shortlinks to .htaccess
+*Improve comments in .htaccess
 
 See the CHANGELOG file for historical entries, or the git source repository for
 per-commit change information.
