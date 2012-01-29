@@ -70,9 +70,9 @@ Contributors:
 
 Changelog for this release:
 
-v1.2-rc1
-*common.php: Use correct array when vending special items
-*Increase rate of special items to 10%
+v1.2.0
+*Add Github & Google+ shortlinks to .htaccess(merged from v1.1.1)
+*Improve comments in .htaccess(merged from v1.1.1)
 
 See the CHANGELOG file for historical entries, or the git source repository for
 per-commit change information.
