@@ -42,6 +42,7 @@ $text_seps = array(
 	'br'	=>	'<br />',
 );
 
+
 //
 // Preparatory Actions
 //
@@ -53,6 +54,63 @@ require_once 'vendlist.php';
 //
 // Function Definitions
 //
+
+// arg()
+//
+// Load an argument from POST or GET
+//
+// $key: name of argument
+// $default: what to return if nothing else is found
+// Return value: value being sought out, or $default
+function arg($key, $default = null) {
+	// Where to look for arguments
+	$arg = array($_POST, $_GET);
+	
+	// Look for the $key in each arg source
+	foreach( $arg as $arr ) {
+		// Check for the key in this arg source
+		if ( array_key_exists($key, $arr)) {
+			// We found it!
+			return $arr[$key];
+		}
+	}
+	// Send back the default if we've failed
+	return $default;
+}
+
+// byte_size()
+//
+// Turn a byte-count into a human-readable quantity, using SI binary prefixes
+//
+// $b: number of bytes
+// Return value: 
+function byte_size($b = 0) {
+	if ($b < 1024 ) {
+		return $b . 'B';
+	}
+	if (($kb = $b / 1024) < 1024) {
+		return round($kb, 0) . 'KiB';
+	}
+	if (($mb = $kb / 1024) < 1024) {
+		return round($mb, 0) . 'MiB';
+	}
+	if (($gb = $mb / 1024) < 1024) {
+		return round($gb, 0) . 'GiB';
+	}
+	if (($tb = $gb / 1024) < 1024) {
+		return round($tb, 0) . 'TiB';
+	}
+	if (($pb = $tb / 1024) < 1024) {
+		return round($pb, 0) . 'PiB';
+	}
+	if (($eb = $pb / 1024) < 1024) {
+		return round($eb, 0) . 'EiB';
+	}
+	if (($zb = $eb / 1024) < 1024) {
+		return round($zb, 0) . 'ZiB';
+	}
+	return round($zb / 1024, 0) . 'YiB';
+}
 
 // format()
 //
@@ -92,28 +150,6 @@ function format($data, $format = 'text') {
 	return $return;
 }
 
-// arg()
-//
-// Load an argument from POST or GET
-//
-// $key: name of argument
-// $default: what to return if nothing else is found
-// Return value: value being sought out, or $default
-function arg($key, $default = null) {
-	// Where to look for arguments
-	$arg = array($_POST, $_GET);
-	
-	// Look for the $key in each arg source
-	foreach( $arg as $arr ) {
-		// Check for the key in this arg source
-		if ( array_key_exists($key, $arr)) {
-			// We found it!
-			return $arr[$key];
-		}
-	}
-	// Send back the default if we've failed
-	return $default;
-}
 // vend()
 //
 // Vend some items(or a single one)
