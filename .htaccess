@@ -34,11 +34,8 @@ RewriteCond %{HTTP_HOST} !^(\w{1,16}\.){0,2}itvends\.com$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^(\w{1,16}\.){0,1}www\.itvends.com$ [NC]
 RewriteRule ^(.*)$ https://itvends.com/$1 [L,R=307]
 
-## Permit skipping of file ending
-RewriteCond %{REQUEST_URI} ^/.+$ [NC]
-RewriteCond %{REQUEST_FILENAME} !-F
-RewriteCond %{REQUEST_FILENAME}.php -F
-RewriteRule ^(.*)$ $1.php [L]
+## Make API available sans .php
+RewriteRule ^(?:/?)(vend)$ /$1.php [L]
 
 ## Show favicon
 RewriteRule ^(?:/)?(?:favicon\.)(ico|png)$ img/favicon.$1 [L]
