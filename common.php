@@ -10,6 +10,9 @@
 // Runtime Constants
 //
 
+// End-of-line
+define('EOL', "\n");
+
 // Max items to vend
 define('ITEMLIMIT', 10);
 
