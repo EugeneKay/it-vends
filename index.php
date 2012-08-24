@@ -14,10 +14,10 @@ require_once 'common.php';
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
-		<title>It Vends!</title>
-		<base href="<?php echo PROTOCOL; ?>://<?php echo $_SERVER['HTTP_HOST']; ?>/"/>
+		<title>It Blends!</title>
+		<base href="<?php echo PROTOCOL; ?>://<?php echo $_SERVER['HTTP_HOST']; ?>/blend"/>
 		<link rel="icon" type="image/png" href="img/favicon.png"/>
-		<link rel="stylesheet" type="text/css" href="css/itvends.css"/>
+		<link rel="stylesheet" type="text/css" href="blend/css/itvends.css"/>
 		<link rel="stylesheet" type="text/css" href="css/start/jquery-ui-1.8.5.custom.css"/>
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.16.js"></script>
@@ -45,10 +45,10 @@ $(document).ready(function() {
 	</head>
 	<body>
 		<div id="vendit">
-			<a href="/?action=vend" id="vendbutton"><span>Vend!</span></a>
+			<a href="/blend/?action=vend" id="vendbutton"><span>Blend!</span></a>
 		</div>
 		<div id="itvends-overlay" class="<?php if (arg('action', FALSE) != 'vend') { echo 'hidden'; } ?>">
-			<div id="itvends">IT VENDS!</div>
+			<div id="itvends">IT BLENDS!</div>
 			<div id="venditem"><?php echo vend(); ?></div>
 		</div>
 		<div id="footer"><div>Code available on <a href="https://github.com/eugenekay/it-vends">GitHub</a> under the terms of the <a href="https://www.gnu.org/licenses/gpl.html">GPL</a></div></div>
