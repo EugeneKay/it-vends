@@ -51,6 +51,6 @@ $(document).ready(function() {
 			<div id="itvends">IT BLENDS!</div>
 			<div id="venditem"><?php echo vend(); ?></div>
 		</div>
-		<div id="footer"><div>Code available on <a href="https://github.com/eugenekay/it-vends">GitHub</a> under the terms of the <a href="https://www.gnu.org/licenses/gpl.html">GPL</a></div></div>
+		<div id="footer"><div>Code available on <a href="https://github.com/cr5315/it-blends">GitHub</a> under the terms of the <a href="https://www.gnu.org/licenses/gpl.html">GPL</a></div></div>
 	</body>
 </html>
