@@ -120,6 +120,7 @@ $vendlist[]='an empty water bottle';
 $vendlist[]='a single 2x4 Lego piece';
 $vendlist[]='bees?!?';
 
+$vendspecial[]='a diet hannerz'
 $vendspecial[]='the complete works of Shakespeare';
 $vendspecial[]='an orange traffic cone';
 $vendspecial[]='a bag of microwave popcorn';
