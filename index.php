@@ -38,8 +38,8 @@ require_once 'common.php';
 		<link rel="icon" type="image/png" href="img/favicon.png"/>
 		<link rel="stylesheet" type="text/css" href="css/itvends.css"/>
 		<link rel="stylesheet" type="text/css" href="css/start/jquery-ui-1.8.5.custom.css"/>
-		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.16.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.js"></script>
 		<script type="text/javascript" src="js/jquery-plugins.js"></script>
 		<script type="text/javascript">
 /* <![CDATA[ */

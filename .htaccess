@@ -26,11 +26,16 @@ RewriteRule ^(.*)$ https://github.com/eugenekay/it-vends [L,R=307]
 
 ## Correct Domain
 RewriteCond %{SERVER_PORT} ^80$
-RewriteCond %{HTTP_HOST} !^(\w{1,16}\.){0,2}itvends\.com$ [NC]
+RewriteCond %{HTTP_HOST} !^(\w{1,16}\.){0,2}itvends\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^(\w{1,16}\.){0,1}www\.itvends.com$ [NC]
 RewriteRule ^(.*)$ http://itvends.com/$1 [L,R=307]
 RewriteCond %{SERVER_PORT} ^443$
-RewriteCond %{HTTP_HOST} !^(\w{1,16}\.){0,2}itvends\.com$ [NC]
+RewriteCond %{HTTP_HOST} !^(\w{1,16}\.){0,2}itvends\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^(\w{1,16}\.){0,1}www\.itvends.com$ [NC]
 RewriteRule ^(.*)$ https://itvends.com/$1 [L,R=307]
 
 ## Make API available sans .php
 RewriteRule ^(?:/?)(vend)$ /$1.php [L]
+
+## Show favicon
+RewriteRule ^(?:/)?(?:favicon\.)(ico|png)$ img/favicon.$1 [L]
