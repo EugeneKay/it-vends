@@ -11,7 +11,7 @@
 //
 
 // Max items to vend
-define('ITEMLIMIT', 10);
+define('ITEMLIMIT', 100);
 
 // Request protocol
 switch (@$_SERVER['SERVER_PORT']) {
