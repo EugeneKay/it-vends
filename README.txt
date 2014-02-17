@@ -70,9 +70,14 @@ Contributors:
 
 Changelog for this release:
 
-v1.2.0
-*Add Github & Google+ shortlinks to .htaccess(merged from v1.1.1)
-*Improve comments in .htaccess(merged from v1.1.1)
+v1.3.0
+
+*Improve redirect behaviour
+*Update to newer jQuery
+*Multiple typofixes & additional items
+*Higher ITEMLIMIT for butt scale
+*Benchmarking support
+*Add "bag" page for container support.
 
 See the CHANGELOG file for historical entries, or the git source repository for
 per-commit change information.
