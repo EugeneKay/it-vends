@@ -269,6 +269,7 @@ $vendlist[]='a walnut';
 $vendlist[]='a wiffle ball';
 $vendlist[]='a yogurt container';
 $vendlist[]='a zither';
+$vendlist[]='a lawsuit';
 $vendspecial[]='the complete works of Shakespeare';
 $vendspecial[]='an orange traffic cone';
 $vendspecial[]='a bag of microwave popcorn';
