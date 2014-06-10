@@ -32,7 +32,7 @@ default:
 //
 
 // Valid output formats
-$formats = array('text', 'json', 'serial', 'php');
+$formats = array('text', 'title', 'json', 'serial', 'php');
 
 // Text separators
 $text_seps = array(
@@ -141,6 +141,13 @@ function format($data, $format = 'text') {
 		header('Content-type: application/json');
 		$return = json_encode($data);
 		break;
+        case 'title':
+                header('Content-type: text/html; Charset=UTF-8');
+                $sep = arg('sep', 'lf');
+                $sep = array_key_exists($sep, $text_seps) ? $text_seps[$sep] : $text_seps['lf'];
+                $vend = is_array($data) ? implode( $sep, $data) : $data;
+                $return = "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html;Charset=UTF-8\">\n<title>$vend</title>\n</head>\n</html>";
+                break;
 	case 'text':
 	default:
 		header('Content-type: text/plain');
