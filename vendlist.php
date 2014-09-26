@@ -321,3 +321,4 @@ $vendspecial[]='a cool spy gadget.  There\'s no instruction manual.  Good Luck';
 $vendspecial[]='a warning label stating \'You know this stuff is bad for you, right?\'';
 $vendspecial[]='a warning label stating \'WARNING: This product contains chemicals known to the State of California to cause cancer and birth defects or other reproductive harm\'';
 $vendspecial[]='two sodas. Neither are the right kind';
+$vendspecial[]='a Furby 1998, colored Leopard'
