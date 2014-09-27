@@ -57,6 +57,9 @@ default:
 	break;
 }
 
+// Give us a newline for sanity
+echo EOL;
+
 
 //
 // Cleanup
