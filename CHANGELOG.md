@@ -1,7 +1,7 @@
 <!---
-# CHANGELOG.md
-# it-vends
-# -->
+  -- CHANGELOG.md
+  -- it-vends
+  -->
 
 v1.4.0
 ------

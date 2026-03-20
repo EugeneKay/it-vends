@@ -1,5 +1,5 @@
 /*
- * js/jquery-UI-1.8.23.js
+ * web/js/jquery-UI-1.8.23.js
  * it-vends
  *
  * jQuery UI 1.8.23

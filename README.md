@@ -28,19 +28,19 @@ Copyright
 
 It Vends is Copyright 2011 by the persons listed in the Authors section of this README document. Detailed authorship can be found by examing the source code repository via the "git-blame" command.
 
-The "It Vends" name is Copyright 2010 Eugene E. Kashpureff, and is pending trademark registration in The United States of America. Usage of this term (including the phrase "It Vends!") is permitted within reason and when used in a manner consistent with the image of the brand. See the License section below for further information.
+The "It Vends" name is Copyright 2010 Eugene Evgenevich Kashpureff. Usage of this term (including the phrase "It Vends!") is permitted within reason and when used in a manner consistent with the image of the brand. See the License section below for further information.
 
-Included libraries(jQuery, Sizzle, jQuery UI, jQuery doTimeout) are copyright by their respective authors, as noted in their source files.
+Included libraries for the individual Implementations are copyright by their respective authors, as noted in their source files.
 
 
 Authors
 -------
 
 Maintainer:
-  * [Eugene E. Kashpureff Jr](mailto:eugene@kashpureff.org)
+  * [Eugene Evgenevich Kashpureff](mailto:eugene@kashpureff.cloud)
 
 Primary Authors:
-  * [Eugene E. Kashpureff Jr](mailto:eugene@kashpureff.org)
+  * [Eugene Evgenevich Kashpureff](mailto:eugene@kashpureff.cloud)
   * [Jeffrey C. "Entomo" Hoyt](mailto:jchoyt@gmail.com)
   * [William Cahill-Manley](mailto:william@cahillmanley.com)
 
@@ -54,15 +54,12 @@ Contributors:
 Changelog
 ---------
 
-Changelog for this release(**v1.4.0**):
+Changelog for this release(**v2.0.0**):
 
-  * Add new "title" format.
-  * Add new vendables
-  * Restructure README & CHANGELOG into Markdown
+  * Refactor PHP implementation into php/
 
 
-See the CHANGELOG file for historical entries, or the git source repository for
-per-commit change information.
+See the CHANGELOG file for historical entries, or the git source repository for per-commit change information.
 
 
 License
@@ -82,20 +79,15 @@ Software or services which utilize It Vends in an unchanged or minimally altered
 
 The full source code for It Vends is available [on Github](https://github.com/eugenekay/it-vends).
 
-It Vends includes the jQuery library, and it is distributed under the terms of the GNU General Public License, version 3, in accordance with the allowances of the MIT "Expat" License(included with It Vends as licenses/jQuery-MIT.txt). You may obtain a copy of the jQuery library for your own use [here](http://jquery.com/).
-
-It Vends includes the Sizzle.js library, and it is distributed under the terms of the GNU General Public License, version 3, in accordance with the allowances of the MIT "Expat" License(included with It Vends as licenses/Sizzle-MIT.txt). You may obtain a copy of the Sizzle.js library for your own use [here](http://sizzlejs.com/).
-
-It Vends includes the jQuery User Interface library, and it is distributed under the terms of the GNU General Public License, version 3, in accordance with the allowances of the MIT "Expat" License(included with It Vends as licenses/jQuery-ui-MIT.txt). You may obtain a copy of the jQuery User Interface library for your own use [here](http://jqueryui.com/).
-
-It Vends includes the jQuery doTimeout plugin, and it is distributed under the terms of the GNU General Public License, version 3, in accordance with the allowances of the MIT "Expat" License(included with It Vends as licenses/jquery-dotimeout-MIT.txt). You may obtain a copy of jQuery doTimeout
-for your own use [here](http://benalman.com/projects/jquery-dotimeout-plugin/).
-
-
 Installation
 ------------
 
-It Vends may be installed in the root directory of any VirtualHost. The current .htaccess assumes usage of the itvends.com domain and an Apache web server. Your setup will inevitably differ, and the configuration should be changed to fit.
+```
+$ git clone https://github.com/eugenekay/it-vends.git
+$ cd it-vends/
+$ docker compose up --build --detach
+$ firefox http://localhost:8000
+```
 
 
 Contributions
