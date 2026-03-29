@@ -32,7 +32,7 @@ default:
 //
 
 // Valid output formats
-$formats = array('text', 'title', 'json', 'serial', 'php');
+$formats = array('text', 'title', 'json', 'serial', 'php', 'slack');
 
 // Text separators
 $text_seps = array(
@@ -148,6 +148,10 @@ function format($data, $format = 'text') {
                 $vend = is_array($data) ? implode( $sep, $data) : $data;
                 $return = "<!DOCTYPE HTML>\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html;Charset=UTF-8\">\n<title>$vend</title>\n</head>\n</html>";
                 break;
+    case 'slack':
+        header('Content-type: application/json');
+        $vend = is_array($data) ? data[0]: $data;
+        $return = "{\n  \"response_type\": \"in_channel\",\n  \"text\": \"$data\"\n}"
 	case 'text':
 	default:
 		header('Content-type: text/plain');
