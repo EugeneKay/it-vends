@@ -1,5 +1,5 @@
 <?php
-// index.php
+// php/src/index.php
 // it-vends
 //
 // Copyright 2011 by It Vends Authors. Consult the README file included with

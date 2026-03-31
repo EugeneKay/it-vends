@@ -2,3 +2,11 @@
 # docker-compose.yaml
 # it-vends
 #
+
+services:
+  php:
+    build: ./php
+    container_name: it-vends-php
+    ports:
+      - "9000:9000"
+      

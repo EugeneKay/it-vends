@@ -1,4 +1,7 @@
 <?php
+// php/src/bag.php
+// it-vends
+//
 
 $bag[]="bag";
 $bag[]="box";

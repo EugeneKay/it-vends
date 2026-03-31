@@ -1,5 +1,5 @@
 <?php
-// vendlist.php
+// php/src/vendlist.php
 // it-vends
 //
 // Items should be in the format "<preposition> <noun>". No trailing period.

@@ -1,5 +1,5 @@
 <?php
-// common.php
+// php/src/common.php
 // it-vends
 //
 // Copyright 2011 by It Vends Authors. Consult the README file included with
