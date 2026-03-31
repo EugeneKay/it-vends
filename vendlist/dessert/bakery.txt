@@ -1,0 +1,23 @@
+a bagel
+a baguette
+an apple turnover
+a blueberry muffin
+a brownie
+a cherry tart
+a cheese twist
+a cinnamon roll
+a croissant
+a danish
+a dinner biscuit
+a dinner roll
+a donut
+a fruit danish
+a lemon bar
+a loaf cake
+a pie slice
+a raisin bun
+a scone
+a sugar cookie
+a sweet bun
+a tea bun
+an eclair

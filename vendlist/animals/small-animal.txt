@@ -1,0 +1,9 @@
+a box turtle
+a field mouse
+a goldfish
+a guinea pig
+a hamster
+a lizard
+a rabbit
+a tree frog
+an iguana

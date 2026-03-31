@@ -1,0 +1,10 @@
+a bran cereal cup
+a corn cereal cup
+a fruit cereal cup
+a granola cup
+a honey cereal cup
+a muesli cup
+an oat cereal cup
+a puffed rice cup
+a raisin cereal cup
+a wheat cereal cup

@@ -1,0 +1,11 @@
+a broth cup
+a chowder cup
+a chicken soup cup
+a lentil soup cup
+a miso soup cup
+a noodle soup cup
+an onion soup cup
+a pea soup cup
+a potato soup cup
+a tomato soup cup
+a vegetable soup cup

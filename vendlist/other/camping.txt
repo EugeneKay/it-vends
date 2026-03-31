@@ -1,0 +1,7 @@
+a canteen
+a compass
+a fire starter
+a rope coil
+a tarp roll
+a tent peg
+a trail map

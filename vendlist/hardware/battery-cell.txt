@@ -1,0 +1,11 @@
+a AA cell
+a AAA cell
+a button cell
+a camera cell
+a coin cell
+a lantern battery
+a lithium cell
+a power cell
+a rechargeable cell
+a watch cell
+an alkaline cell
