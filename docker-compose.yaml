@@ -9,4 +9,3 @@ services:
     container_name: it-vends-php
     ports:
       - "9000:9000"
-      

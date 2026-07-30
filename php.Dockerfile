@@ -1,7 +1,10 @@
 #
-# php/Dockerfile
+# php.Dockerfile
 # it-vends
 #
+
+# Metadata
+
 
 FROM php:8.2-fpm-alpine
 

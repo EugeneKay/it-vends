@@ -1,0 +1,34 @@
+{
+  "name": "it-vends-typescript",
+  "version": "2.0.0",
+  "description": "TypeScript edge function for vending items on-demand - compatible with AWS, Azure, GCP, Cloudflare, and local runtimes",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "node -r ts-node/register scripts/build-vendlist.ts",
+    "build": "tsc && cp dist/vendlist.json dist/ 2>/dev/null || true",
+    "dev": "ts-node src/server.ts",
+    "start": "node dist/server.js",
+    "build-vendlist": "node -r ts-node/register scripts/build-vendlist.ts",
+    "test": "echo 'No tests configured yet'"
+  },
+  "keywords": [
+    "vends",
+    "serverless",
+    "edge-functions",
+    "aws-lambda",
+    "gcp",
+    "azure",
+    "cloudflare"
+  ],
+  "author": "Eugene Evgenevich Kashpureff",
+  "license": "See LICENSE in repository root",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
